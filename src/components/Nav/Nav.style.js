@@ -12,18 +12,21 @@ const NavBar = styled(Navbar)`
         margin-left: 400px;
     }
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        padding: 10px 10px;
+        padding: 10px 15px;
+        & ul {
+            margin-left: 0;
+        }
     }
     @media only screen and (max-width: 767px) {
-        padding: 10px 10px;
+        padding: 10px 15px;
+        & ul {
+            margin-left: 0;
+        }
         & .navbar-brand {
             display: block;
             margin: 0 auto;
             padding: 0;
-            margin-right: 10px;
-        }
-        & a::after {
-            border-bottom: 1px solid white;
+            margin-right: 19px;
         }
     }
 `;
