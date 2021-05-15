@@ -5,6 +5,7 @@ import Main from './components/Main/Main';
 import AppNav from './components/Nav/Nav';
 import 'bootstrap/dist/css/bootstrap.css';
 import GlobalStyle from './assets/GlobalStyle';
+import './assets/custom.css';
 
 const App = () => {
     return (
