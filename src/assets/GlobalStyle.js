@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 
 html {
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
 }
 body {
@@ -28,8 +28,13 @@ body {
       text-decoration: none;
       transition: all 0.3s;
   }
+
+  hr {
+    margin: 0 80px;
+  }
+
   #main-body {
-    min-height: 130vh;
+    min-height: 300vh;
     margin-top: 100px;
     @media only screen and (max-width: 767px) {
     margin-top: 100px;
