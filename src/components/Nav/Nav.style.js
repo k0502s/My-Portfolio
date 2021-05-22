@@ -6,7 +6,10 @@ import { Navbar, Nav, CardFooter, Card } from 'reactstrap';
 const NavBar = styled(Navbar)`
     position: fixed;
     width: 100%;
-    background-color: #07344e;
+    /* background-color: #07344e; */
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    border-bottom: 1px solid rgb(238, 238, 238);
     padding: 10px 20px;
     & ul {
         margin-left: 400px;
