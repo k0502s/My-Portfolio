@@ -33,6 +33,10 @@ body {
     margin: 0 80px;
   }
 
+  ul, ol, li {
+      list-style: none;
+  }
+
   #main-body {
     min-height: 300vh;
     margin-top: 100px;
