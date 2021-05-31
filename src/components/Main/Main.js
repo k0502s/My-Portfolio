@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import './Main.style.css';
+import React from 'react';
 import About from './About/About';
 import Skils from './Skils/Skils';
-import { NavbarToggler, Collapse, NavItem, Col, Row, NavLink, DropdownItem, DropdownToggle, UncontrolledDropdown, DropdownMenu, NavbarBrand, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import * as S from './Main.style.js';
+
 
 const Main = () => {
     return (
-        <div class="contain">
+        <S.MainWrap>
             <section id="about">
                 <About />
             </section>
@@ -14,7 +14,7 @@ const Main = () => {
             <section id="skils">
                 <Skils />
             </section>
-        </div>
+        </S.MainWrap>
     );
 };
 

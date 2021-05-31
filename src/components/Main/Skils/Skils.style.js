@@ -7,6 +7,7 @@ const SectionTitle = styled.h1`
     font-size: 40px;
     font-weight: normal;
     position: relative;
+    color: #f9e81c;
 
     &::before {
         content: '';
@@ -37,24 +38,26 @@ const SkilsItem = styled.div`
 `;
 const SkilItem = styled.div`
     display: inline-block;
-    width: 190px;
-    height: 200px;
-    border: 1px solid #ddd;
+    width: 205px;
+    height: 190px;
     position: relative;
     margin: 20px 30px 0 30px;
 
     & img {
-        width: 190px;
-        height: 200px;
+        width: 205px;
+        height: 190px;
+        background-color: white;
+        border-radius: 7%;
     }
     &:hover .caption {
         opacity: 1;
     }
 
     & .caption {
-        width: 190px;
-        height: 200px;
+        width: 205px;
+        height: 190px;
         background-color: rgba(0, 0, 0, 0.727);
+        border-radius: 7%;
         position: absolute;
         top: 0;
         left: 0;
@@ -116,6 +119,7 @@ const List = styled.div`
     & h4 {
         margin: 60px 0 35px 0;
         text-align: center;
+        color: #d7d8d8;
     }
 `;
 
@@ -133,8 +137,14 @@ const Li = styled.li`
         float: left;
         margin: 0 16px 0 0;
         width: 36px;
+        height: 33px;
         vertical-align: middle;
+        background-color: white;
+        border-radius: 9%;
         border: 0;
+    }
+    & span {
+        font-size: 15px;
     }
 `;
 const MobileWrap = styled.div`

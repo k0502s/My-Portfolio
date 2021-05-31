@@ -1,7 +1,21 @@
 import React, { useState } from 'react';
 import * as S from './Skils.style';
-import aboutImg from '../../../assets/img/Profile.png';
+import html from './images/html.png';
+import css from './images/css.png';
+import SC from './images/SC.png';
+import JS from './images/JS.png';
+import JQ from './images/JQ.png';
+import react from './images/React.png';
+import TS from './images/TS.png';
+import node from './images/node.png';
+import Mongo from './images/Mongo.png';
+import Mysql from './images/Mysql.png';
+import AWS from './images/AWS.png';
+import Heroku from './images/Heroku.png';
+import Git from './images/Git.png';
+import Jest from './images/Jest.png';
 import MobileSkils from './Section/MobileSkils';
+import { BsFillCaretDownFill, BsFillCaretUpFill } from "react-icons/bs";
 
 const Skils = () => {
     const [IsOpen, setIsOpen] = useState(false);
@@ -15,14 +29,14 @@ const Skils = () => {
                 <S.SkilsItem>
                     <h4>Frontend</h4>
                     <S.SkilItem>
-                        <img src={aboutImg} alt="" />
+                        <img src={html} alt="" />
                         <div class="caption">
                             <h3>HTML5</h3>
                             <p>- 태그를 활용한 마크업</p>
                         </div>
                     </S.SkilItem>
                     <S.SkilItem>
-                        <img src={aboutImg} alt="" />
+                        <img src={css} alt="" />
                         <div class="caption">
                             <h3>CSS3</h3>
                             <p>- Media Query, animation, Grid, Flex 이해</p>
@@ -30,7 +44,14 @@ const Skils = () => {
                         </div>
                     </S.SkilItem>
                     <S.SkilItem>
-                        <img src={aboutImg} alt="" />
+                        <img src={JS} alt="" />
+                        <div class="caption">
+                            <h3>JavaScript</h3>
+                            <p>- VanillaJS·ES6 기본 문법 활용</p>
+                        </div>
+                    </S.SkilItem>
+                    <S.SkilItem>
+                        <img src={SC} alt="" />
                         <div class="caption">
                             <h5>Styled-Components</h5>
                             <p>- React.js와 함께 활용</p>
@@ -39,21 +60,14 @@ const Skils = () => {
                         </div>
                     </S.SkilItem>
                     <S.SkilItem>
-                        <img src={aboutImg} alt="" />
-                        <div class="caption">
-                            <h3>JavaScript</h3>
-                            <p>- VanillaJS·ES6 기본 문법 활용</p>
-                        </div>
-                    </S.SkilItem>
-                    <S.SkilItem>
-                        <img src={aboutImg} alt="" />
+                        <img src={JQ} alt="" />
                         <div class="caption">
                             <h3>JQuery</h3>
                             <p>- 라이브러리 활용 및 기본 커스터마이징</p>
                         </div>
                     </S.SkilItem>
                     <S.SkilItem>
-                        <img src={aboutImg} alt="" />
+                        <img src={react} alt="" />
                         <div class="caption">
                             <h3>React.js</h3>
                             <p>- JSX, Hook, Router 사용</p>
@@ -62,7 +76,7 @@ const Skils = () => {
                         </div>
                     </S.SkilItem>
                     <S.SkilItem>
-                        <img src={aboutImg} alt="" />
+                        <img src={TS} alt="" style={{ objectFit: 'cover' }} />
                         <div class="caption">
                             <h3>TypeScript</h3>
                             <p>- 객체, 리턴 Type 이해</p>
@@ -73,7 +87,7 @@ const Skils = () => {
                     <S.MoreSkils isOpen={IsOpen}>
                         <h4>Backend</h4>
                         <S.SkilItem>
-                            <img src={aboutImg} alt="" />
+                            <img src={node} alt="" />
                             <div class="caption">
                                 <h3>Node.js</h3>
                                 <p>- Express 활용</p>
@@ -82,7 +96,7 @@ const Skils = () => {
                             </div>
                         </S.SkilItem>
                         <S.SkilItem>
-                            <img src={aboutImg} alt="" />
+                            <img src={Mongo} alt="" />
                             <div class="caption">
                                 <h3>MongoDB</h3>
                                 <p>- 기본적인 메서드 활용 경험</p>
@@ -91,7 +105,7 @@ const Skils = () => {
                             </div>
                         </S.SkilItem>
                         <S.SkilItem>
-                            <img src={aboutImg} alt="" />
+                            <img src={Mysql} alt="" />
                             <div class="caption">
                                 <h3>MySQL</h3>
                                 <p>- 기본적인 메서드 활용 경험</p>
@@ -99,7 +113,7 @@ const Skils = () => {
                         </S.SkilItem>
                         <h4>Devops</h4>
                         <S.SkilItem>
-                            <img src={aboutImg} alt="" />
+                            <img src={AWS} alt="" />
                             <div class="caption">
                                 <h3>AWS</h3>
                                 <p>- EC2 서버 구축 및 배포</p>
@@ -107,7 +121,7 @@ const Skils = () => {
                             </div>
                         </S.SkilItem>
                         <S.SkilItem>
-                            <img src={aboutImg} alt="" />
+                            <img src={Heroku} alt="" />
                             <div class="caption">
                                 <h3>Heroku</h3>
                                 <p>- 서버 구축 및 배포</p>
@@ -115,14 +129,14 @@ const Skils = () => {
                             </div>
                         </S.SkilItem>
                         <S.SkilItem>
-                            <img src={aboutImg} alt="" />
+                            <img src={Git} alt="" />
                             <div class="caption">
                                 <h3>Git</h3>
                                 <p>- 형상관리에 필요한 기본적인 사용법 숙지</p>
                             </div>
                         </S.SkilItem>
                         <S.SkilItem>
-                            <img src={aboutImg} alt="" />
+                            <img src={Jest} alt="" />
                             <div class="caption">
                                 <h3>Jest</h3>
                                 <p>- Jest을 이용한 테스트 코드 사이클 기본 이해</p>
@@ -133,14 +147,14 @@ const Skils = () => {
                 </S.SkilsItem>
             </S.SkilsWrap>
             <S.MobileWrap>
-                <MobileSkils IsOpen={IsOpen}/>
+                <MobileSkils IsOpen={IsOpen} />
             </S.MobileWrap>
             <S.BtnWrap onClick={toggleIsOpen}>
                 <S.MoreBtn isOpen={IsOpen} color={'#F05232'} width={'120px'}>
-                    스킬 더보기
+                    스킬 더보기 <BsFillCaretDownFill />
                 </S.MoreBtn>
                 <S.CloseBtn isOpen={IsOpen} color={'#F05232'} width={'120px'}>
-                    스킬 접기
+                    스킬 접기 <BsFillCaretUpFill />
                 </S.CloseBtn>
             </S.BtnWrap>
         </>
