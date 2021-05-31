@@ -30,7 +30,7 @@ body {
   }
 
   hr {
-    margin: 80px 80px;
+    /* margin: 80px 80px; */
   }
 
   ul, ol, li {
@@ -39,10 +39,6 @@ body {
 
   #main-body {
     min-height: 300vh;
-    margin-top: 100px;
-    @media only screen and (max-width: 767px) {
-    margin-top: 100px;
-}
 }
   `;
 
