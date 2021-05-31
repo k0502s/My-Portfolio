@@ -10,10 +10,10 @@ const Hedaer = styled.div`
     background-size: cover;
     width: 100%;
     & h2 {
-        color: #fff;
+        color: #f9e81c;
     }
     & p {
-        color: #fff;
+        color: #f9e81c;
     }
 `;
 
