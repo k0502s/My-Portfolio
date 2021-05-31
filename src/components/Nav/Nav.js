@@ -11,7 +11,7 @@ const AppNav = () => {
         <>
             <S.NavBar dark expand="lg" className="sticky-top">
                 <NavbarToggler onClick={toggle} style={{ border: 'none' }} />
-                <NavbarBrand href="/"><span>Kim, Jin Seok</span> Portofolio</NavbarBrand>
+                <NavbarBrand href="/"><b>Kim, Jin Seok</b> Portofolio</NavbarBrand>
                 <Collapse isOpen={isOpen} navbar>
                     <S.nav navbar>
                         <NavItem>

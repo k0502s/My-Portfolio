@@ -11,7 +11,7 @@ const NavBar = styled(Navbar)`
     border-bottom: 1px solid rgb(238, 238, 238);
     padding: 10px 20px;
 
-    & span {
+    & b {
         border-bottom: 1px solid white;
         font-family: 'sans-serif';
         letter-spacing: 2px;
