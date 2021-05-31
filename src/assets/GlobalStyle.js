@@ -30,7 +30,7 @@ body {
   }
 
   hr {
-    margin: 0 80px;
+    margin: 80px 80px;
   }
 
   ul, ol, li {
