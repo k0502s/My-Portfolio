@@ -32,8 +32,8 @@ const TapWrap = styled.div`
 `;
 const InnerWrap = styled.div`
     height: 500px;
-    margin-top: 70px;
-    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-bottom: 70px;
 `;
 
 const Items = styled.div`
@@ -43,6 +43,7 @@ const Items = styled.div`
     top: 0;
     left: 0;
     transition: 0.5s;
+    
 
     & a:hover img {
         width: 120px;
@@ -71,7 +72,6 @@ const Items = styled.div`
         box-sizing: border-box;
         text-align: center;
         padding: 20px;
-        margin-bottom: -50px;
     }
     @media only screen and (max-width: 767px) {
         & div {
