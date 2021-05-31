@@ -15,7 +15,7 @@ import Heroku from './images/Heroku.png';
 import Git from './images/Git.png';
 import Jest from './images/Jest.png';
 import MobileSkils from './Section/MobileSkils';
-import { BsFillCaretDownFill, BsFillCaretUpFill } from "react-icons/bs";
+import { BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
 
 const Skils = () => {
     const [IsOpen, setIsOpen] = useState(false);
@@ -150,10 +150,10 @@ const Skils = () => {
                 <MobileSkils IsOpen={IsOpen} />
             </S.MobileWrap>
             <S.BtnWrap onClick={toggleIsOpen}>
-                <S.MoreBtn isOpen={IsOpen} color={'#F05232'} width={'120px'}>
+                <S.MoreBtn isOpen={IsOpen} color={'#F05232'} width={'140px'} margin={'60px 0 60px 0'}>
                     스킬 더보기 <BsFillCaretDownFill />
                 </S.MoreBtn>
-                <S.CloseBtn isOpen={IsOpen} color={'#F05232'} width={'120px'}>
+                <S.CloseBtn isOpen={IsOpen} color={'#F05232'} width={'140px'} margin={'60px 0 60px 0'}>
                     스킬 접기 <BsFillCaretUpFill />
                 </S.CloseBtn>
             </S.BtnWrap>

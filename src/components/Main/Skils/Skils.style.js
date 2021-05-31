@@ -30,7 +30,10 @@ const SkilsItem = styled.div`
     text-align: center;
     margin-top: 20px;
     & h4 {
-        margin-top: 60px;
+        background-color: #f9e81c;
+        color: #07344e;
+        margin: 60px 600px 5px 600px;
+        border-radius: 6px;
     }
     @media only screen and (max-width: 1023px) {
         display: none;
@@ -82,7 +85,6 @@ const MoreSkils = styled.div`
 const BtnWrap = styled.div`
     display: flex;
     justify-content: center;
-    margin: 50px;
 `;
 const MoreBtn = styled(Button)`
     display: ${({ isOpen }) => (isOpen ? 'none' : 'block')};
@@ -117,9 +119,11 @@ const List = styled.div`
     width: 100%;
     padding: 0px;
     & h4 {
-        margin: 60px 0 35px 0;
+        margin: 60px 150px 35px 150px;
         text-align: center;
-        color: #d7d8d8;
+        background-color: #f9e81c;
+        color: #07344e;
+        border-radius: 6px;
     }
 `;
 
