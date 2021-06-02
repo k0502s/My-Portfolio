@@ -2,6 +2,7 @@ import React from 'react';
 import About from './About/About';
 import Skils from './Skils/Skils';
 import Projects from './Project/Projects';
+import Contact from './Contact/Contact';
 import * as S from './Main.style.js';
 
 const Main = () => {
@@ -15,6 +16,9 @@ const Main = () => {
             </section>
             <section id="projects">
                 <Projects />
+            </section>
+            <section id="contact">
+                <Contact />
             </section>
         </S.MainWrap>
     );

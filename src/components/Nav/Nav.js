@@ -11,7 +11,9 @@ const AppNav = () => {
         <>
             <S.NavBar dark expand="lg" className="sticky-top">
                 <NavbarToggler onClick={toggle} style={{ border: 'none' }} />
-                <NavbarBrand href="/"><b>Kim, Jin Seok</b> Portofolio</NavbarBrand>
+                <NavbarBrand href="/">
+                    <b>Kim, Jin Seok</b> Portofolio
+                </NavbarBrand>
                 <Collapse isOpen={isOpen} navbar>
                     <S.nav navbar>
                         <NavItem>
@@ -31,12 +33,12 @@ const AppNav = () => {
                         </NavItem>
                         <NavItem>
                             <NavLink className="text-white" onClick={toggle}>
-                                <a href='#projects'>Projects</a>
+                                <a href="#projects">Projects</a>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/" className="text-white" onClick={toggle}>
-                                Contact
+                            <NavLink className="text-white" onClick={toggle}>
+                                <a href="#contact">Contact</a>
                             </NavLink>
                         </NavItem>
                     </S.nav>
