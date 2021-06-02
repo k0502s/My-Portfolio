@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import aboutImg from '../../../../assets/img/Profile.png';
+import React from 'react';
 import html from '../images/html.png';
 import css from '../images/css.png';
 import SC from '../images/SC.png';

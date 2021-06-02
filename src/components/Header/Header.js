@@ -1,5 +1,5 @@
 import React from 'react';
-import HomeBackground from '../../assets/img/HomeBackground.jpg';
+import HomeBackground from './images/HomeBackground.jpg';
 import * as S from './Header.style';
 const Header = () => {
     return (

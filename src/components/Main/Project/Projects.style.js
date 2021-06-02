@@ -5,10 +5,12 @@ const TitleWrap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 `;
 
 const ProjectsWrap = styled.div`
     padding: 30px 0;
+
     & h1 {
         text-align: center;
         font-size: 40px;
@@ -41,7 +43,6 @@ const ProjectsWrap = styled.div`
         font-size: 14px;
         font-family: 'none';
         color: lightgray;
-        
     }
     & p {
         margin: 30px 0;
@@ -63,11 +64,11 @@ const ProjectsWrap = styled.div`
             line-height: 28px;
         }
         & li img {
-            max-width: 500px;
+            max-width: 600px;
             object-fit: fill;
             vertical-align: middle;
             font-size: 1em;
-            margin: 0;
+            margin: 50px 0 0 0;
             padding: 0;
             border: 0;
         }
@@ -124,10 +125,10 @@ const ProjectsWrap = styled.div`
     }
 `;
 const BtnWrap = styled.div`
-display: flex;
-justify-content: center;
-margin-top: 30px;
-`
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+`;
 const ProjectBtn = styled(Button)`
     color: white;
     border: 1px;
@@ -142,7 +143,7 @@ const ProjectBtn = styled(Button)`
 `;
 
 const SubWrap = styled.div`
-    margin: 90px 129px;
+    margin: 90px 70px;
     @media only screen and (max-width: 1023px) {
         margin: 60px 20px;
     }
