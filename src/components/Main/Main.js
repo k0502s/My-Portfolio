@@ -1,6 +1,7 @@
 import React from 'react';
 import About from './About/About';
 import Skils from './Skils/Skils';
+import Projects from './Project/Projects';
 import * as S from './Main.style.js';
 
 const Main = () => {
@@ -11,6 +12,9 @@ const Main = () => {
             </section>
             <section id="skils">
                 <Skils />
+            </section>
+            <section id="projects">
+                <Projects />
             </section>
         </S.MainWrap>
     );

@@ -30,8 +30,8 @@ const AppNav = () => {
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/" className="text-white" onClick={toggle}>
-                                Project
+                            <NavLink className="text-white" onClick={toggle}>
+                                <a href='#projects'>Projects</a>
                             </NavLink>
                         </NavItem>
                         <NavItem>

@@ -64,6 +64,7 @@ const Items = styled.div`
     & span:nth-of-type(2) {
         background-color: #f9e81c;
         color: #07344e;
+        padding: 4px;
     }
     & div {
         width: 800px;

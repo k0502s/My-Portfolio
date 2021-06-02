@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-
 html {
     width: 100%;
     overflow-x: hidden;
@@ -14,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: large;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Do Hyeon', sans-serif !important;
     overflow-x: hidden;
 }
 *, *:before, *:after {
@@ -27,10 +26,6 @@ body {
       color: inherit;
       text-decoration: none;
       transition: all 0.3s;
-  }
-
-  hr {
-    /* margin: 80px 80px; */
   }
 
   ul, ol, li {

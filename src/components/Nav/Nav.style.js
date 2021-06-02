@@ -12,7 +12,7 @@ const NavBar = styled(Navbar)`
     padding: 10px 20px;
 
     & b {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #fff;
         font-family: 'sans-serif';
         letter-spacing: 2px;
         color: #f9e81c;
