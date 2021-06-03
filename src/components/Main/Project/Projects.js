@@ -8,7 +8,7 @@ const Projects = () => {
     return (
         <>
             <S.ProjectsWrap>
-                <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <div data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <S.TitleWrap>
                         <h1>Projects</h1>
                     </S.TitleWrap>
@@ -16,12 +16,12 @@ const Projects = () => {
                 <S.SubWrap>
                     <ul>
                         <li>
-                            <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                            <div data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000" data-aos-easing="ease-in-out">
                                 <img src={mockup_0} />
                             </div>
                         </li>
                         <li>
-                            <div data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                            <div data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000" data-aos-easing="ease-in-out">
                                 <h3>포트폴리오 웹 사이트</h3>
                                 <br />
                                 저의 자기소개를 위한 포트폴리오 웹 사이트를 직접 제작하였습니다. React.js 환경에서 styled-Components을 이용하여 CSS 스타일링을 하여 직관적인 소개 정보 전달을 중점으로
@@ -53,12 +53,12 @@ const Projects = () => {
                     </ul>
                     <ul>
                         <li>
-                            <div data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                            <div data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000" data-aos-easing="ease-in-out">
                                 <img src={mockup_1} />
                             </div>
                         </li>
                         <li>
-                            <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                            <div data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000" data-aos-easing="ease-in-out">
                                 <h3>사진 동호회 웹 사이트</h3>
                                 <br />
                                 실제 동호회 모임을 넷상에서도 교류 할 수 있게끔 CRUD 중심의 SPA 사이트를 제작하였습니다. 회원들이 직접 찍은 포토들을 갤러리에서 공유할 수 있고, 게시판에서 동호회 가입
@@ -93,12 +93,12 @@ const Projects = () => {
 
                     <ul>
                         <li>
-                            <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                            <div data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000" data-aos-easing="ease-in-out">
                                 <img src={mockup_2} />
                             </div>
                         </li>
                         <li>
-                            <div data-aos="fade-left" data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                            <div data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000" data-aos-easing="ease-in-out">
                                 <h3>동호회 회원 관리 시스템</h3>
                                 <br />
                                 사진 동호회가 실제로 운영되고 회원의 수가 많아진다면 회원들을 더 직관적이고 효율적으로 관리하기 위한 ADMIN 시스템 사이트를 따로 제작하였습니다. 회원들의 정보를 추가,
