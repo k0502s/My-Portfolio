@@ -41,7 +41,7 @@ const Items = styled.div`
     height: 500px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0; 
     transition: 0.5s;
     
 

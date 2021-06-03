@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import GlobalStyle from './assets/GlobalStyle';
 import './assets/custom.css';
 
+
 const App = () => {
     return (
         <div className="App">

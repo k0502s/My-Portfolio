@@ -28,6 +28,7 @@ const TitleWrap = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    margin-top: 20px;
     & h1 {
         text-align: center;
         font-size: 40px;

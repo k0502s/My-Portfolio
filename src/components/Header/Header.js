@@ -4,10 +4,16 @@ import * as S from './Header.style';
 const Header = () => {
     return (
         <>
-            <section id='home'>
+            <section id="home">
                 <S.Hedaer style={{ backgroundImage: `url(${HomeBackground})` }}>
-                    <h2>안녕하세요. 김진석입니다.</h2>
-                    <p>프론트엔드 개발자가 되기를 희망하는 신입입니다.</p>
+                    <div data-aos="fade-up" data-aos-delay="700" data-aos-duration="700" data-aos-easing="ease-in-out">
+                        <h2>
+                            안녕하세요.
+                            <br />
+                            김진석의 포트폴리오 입니다.
+                        </h2>
+                        <p>프론트엔드 개발자가 되기를 희망하는 신입입니다.</p>
+                    </div>
                 </S.Hedaer>
             </section>
         </>

@@ -10,14 +10,8 @@ const FooterWrap = styled(Row)`
     & p {
         text-align: center;
         letter-spacing: 0.2em;
+        margin: 0;
     }
 `;
 
-const TitleWrap = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-`;
-
-export { FooterWrap, TitleWrap };
+export { FooterWrap };
