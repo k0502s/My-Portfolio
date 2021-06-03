@@ -42,10 +42,10 @@ const Projects = () => {
                                 Devops <b>Git</b>
                                 <S.BtnWrap>
                                     <S.ProjectBtn width={'120px'} margin={'0 15px 0 0'} color={'#F05232'}>
-                                        <a href="https://github.com/k0502s/My-Portfolio">GitHub 보기</a>
+                                        <a href="https://github.com/k0502s/Kim-Jin-Seok-Portfolio">GitHub 보기</a>
                                     </S.ProjectBtn>
                                     <S.ProjectBtn width={'120px'} margin={'0 0 0 15px'} color={'#F05232'}>
-                                        <a href="">사이트 방문하기</a>
+                                        <a href="https://k0502s.github.io/Kim-Jin-Seok-Portfolio">사이트 방문하기</a>
                                     </S.ProjectBtn>
                                 </S.BtnWrap>
                             </div>
@@ -84,7 +84,7 @@ const Projects = () => {
                                         <a href="https://github.com/k0502s/Photo-Club">GitHub 보기</a>
                                     </S.ProjectBtn>
                                     <S.ProjectBtn width={'120px'} margin={'0 0 0 15px'} color={'#F05232'}>
-                                        <a href="">사이트 방문하기</a>
+                                        <a href="https://photo-club-korea.herokuapp.com">사이트 방문하기</a>
                                     </S.ProjectBtn>
                                 </S.BtnWrap>
                             </div>
@@ -126,7 +126,7 @@ const Projects = () => {
                                         <a href="https://github.com/k0502s/Member-Admin-System">GitHub 보기</a>
                                     </S.ProjectBtn>
                                     <S.ProjectBtn width={'120px'} margin={'0 0 0 15px'} color={'#F05232'}>
-                                        <a href="">사이트 방문하기</a>
+                                        <a href="https://member-admin-system.herokuapp.com">사이트 방문하기</a>
                                     </S.ProjectBtn>
                                 </S.BtnWrap>
                             </div>
