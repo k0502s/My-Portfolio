@@ -93,6 +93,10 @@ const ProjectsWrap = styled.div`
             display: inline-block;
             margin-bottom: 9px;
         }
+
+        & b {
+            font-size: 12px;
+        }
         & ul {
             margin-bottom: 50px;
             & li img {
@@ -121,6 +125,11 @@ const ProjectsWrap = styled.div`
             & li:first-child {
                 text-align: center;
             }
+        }
+    }
+    @media only screen and (max-width: 390px){
+        & b {
+            font-size: 10px;
         }
     }
 `;
