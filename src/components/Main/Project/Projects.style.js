@@ -6,6 +6,9 @@ const TitleWrap = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    @media only screen and (max-width: 767px) {
+        margin: -15px 0 -55px 0;
+    }
 `;
 
 const ProjectsWrap = styled.div`
@@ -103,6 +106,7 @@ const ProjectsWrap = styled.div`
                 width: 100%;
                 max-width: 450px;
             }
+
             & li {
                 float: unset;
                 width: 100%;
@@ -127,7 +131,7 @@ const ProjectsWrap = styled.div`
             }
         }
     }
-    @media only screen and (max-width: 390px){
+    @media only screen and (max-width: 390px) {
         & b {
             font-size: 10px;
         }
@@ -141,7 +145,6 @@ const BtnWrap = styled.div`
 const ProjectBtn = styled(Button)`
     color: white;
     border: 1px;
-    /* border-radius: 20px; */
     background-color: ${(props) => props.color};
     margin: ${(props) => props.margin};
     width: ${(props) => props.width};
