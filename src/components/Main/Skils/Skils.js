@@ -30,7 +30,9 @@ const Skils = () => {
             <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <S.SkilsWrap>
                     <S.SkilsItem>
-                        <h4>Frontend</h4>
+                        <S.SkilTitle>
+                            <h4>Frontend</h4>
+                        </S.SkilTitle>
                         <S.SkilItem>
                             <img src={html} alt="" />
                             <div class="caption">
@@ -89,7 +91,9 @@ const Skils = () => {
                         </S.SkilItem>
                         <S.MoreSkils isOpen={IsOpen}>
                             <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                                <h4>Backend</h4>
+                                <S.SkilTitle>
+                                    <h4>Backend</h4>
+                                </S.SkilTitle>
                                 <S.SkilItem>
                                     <img src={node} alt="" />
                                     <div class="caption">
@@ -115,7 +119,9 @@ const Skils = () => {
                                         <p>- 기본적인 메서드 활용 경험</p>
                                     </div>
                                 </S.SkilItem>
-                                <h4>Devops</h4>
+                                <S.SkilTitle>
+                                    <h4>Devops</h4>
+                                </S.SkilTitle>
                                 <S.SkilItem>
                                     <img src={AWS} alt="" />
                                     <div class="caption">

@@ -19,7 +19,7 @@ const MobileSkils = ({ IsOpen }) => {
     return (
         <>
             <S.List>
-                <h4>Frontend</h4>
+               <S.MskilTitle><h4>Frontend</h4></S.MskilTitle>
                 <ul>
                     <S.Li>
                         <img src={html} />
@@ -72,7 +72,7 @@ const MobileSkils = ({ IsOpen }) => {
                     </S.Li>
                 </ul>
                 <S.MoreSkils isOpen={IsOpen}>
-                    <h4>Backend</h4>
+                <S.MskilTitle><h4>Backend</h4></S.MskilTitle>
                     <ul>
                         <S.Li>
                             <img src={node} />
@@ -96,7 +96,7 @@ const MobileSkils = ({ IsOpen }) => {
                             <span>기본적인 메서드 활용 경험</span>
                         </S.Li>
                     </ul>
-                    <h4>Devops</h4>
+                    <S.MskilTitle><h4>Devops</h4></S.MskilTitle>
                     <ul>
                         <S.Li>
                             <img src={AWS} />

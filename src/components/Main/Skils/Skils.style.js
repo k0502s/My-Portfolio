@@ -25,15 +25,20 @@ const SkilsWrap = styled.div`
     justify-content: center;
     align-items: center;
 `;
-
+const SkilTitle = styled.div`
+    background-color: #f9e81c;
+    display: flex;
+    justify-content: center;
+    margin: 60px 600px 5px 600px;
+    border-radius: 6px;
+`;
 const SkilsItem = styled.div`
     text-align: center;
     margin-top: 20px;
     & h4 {
-        background-color: #f9e81c;
+        margin: 0;
+        padding: 5px;
         color: #07344e;
-        margin: 60px 600px 5px 600px;
-        border-radius: 6px;
     }
     @media only screen and (max-width: 1023px) {
         display: none;
@@ -115,15 +120,21 @@ const CloseBtn = styled(Button)`
 
 // Mobile Device CSS
 
+const MskilTitle = styled.div`
+    background-color: #f9e81c;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 60px 130px 35px 130px;
+`;
+
 const List = styled.div`
     width: 100%;
     padding: 0px;
     & h4 {
-        margin: 60px 150px 35px 150px;
-        text-align: center;
-        background-color: #f9e81c;
+        margin: 0;
+        padding: 5px;
         color: #07344e;
-        border-radius: 6px;
     }
 `;
 
@@ -158,4 +169,4 @@ const MobileWrap = styled.div`
     }
 `;
 
-export { SkilsWrap, SkilsItem, SkilItem, MoreSkils, BtnWrap, MoreBtn, CloseBtn, List, MobileWrap, SectionTitle, Li };
+export { SkilsWrap, SkilsItem, SkilItem, MoreSkils, BtnWrap, MoreBtn, CloseBtn, List, MobileWrap, SectionTitle, Li, SkilTitle, MskilTitle };
