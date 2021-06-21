@@ -8,7 +8,7 @@
 
 ## 프로젝트 소개
 
-    저에 대하여 간단명료하게 소개하기 위해 직관적인 정보를 전달하는 싱글 페이지를 제작하였습니다. React 환경에서 Styled-Components와 함께 스타일링 작업을 해보았습니다.
+저에 대하여 간단명료하게 소개하기 위해 직관적인 정보를 전달하는 싱글 페이지를 제작하였습니다. React 환경에서 Styled-Components와 함께 스타일링 작업을 해보았습니다.
 
 <br>
 
@@ -32,7 +32,7 @@
 
 |             Contact             |          Mobile Divce         |
 | :---------------------------: |  :---------------------------: |
-| <img src="images/contact.png"> | <img src="images/mobile.png"> |
+| <img src="images/contact.png"> | <img src="images/mobile.png"> <img src="images/mobile2.png">  |
 
 
 
