@@ -32,7 +32,7 @@
 
 |             Contact             |          Mobile Divce - 1         |          Mobile Divce - 2       |
 | :---------------------------: |  :---------------------------: | :---------------------------: |
-| <img src="images/contact.png"> | <img src="images/mobile.png" width="100px"> | <img src="images/mobile2.png" width="100px">  |
+| <img src="images/contact.png"> | <img src="images/mobile.png" width="200px"> | <img src="images/mobile2.png" width="200px">  |
 
 
 
