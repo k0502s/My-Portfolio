@@ -30,7 +30,7 @@
 | :---------------------------: | :--------------------------: |
 | <img src="images/skils.png"> | <img src="images/projects.png"> |
 
-|             Contact             |          Mobile Divce         |
+|             Contact             |          Mobile Divce - 1         |          Mobile Divce - 2       |
 | :---------------------------: |  :---------------------------: | :---------------------------: |
 | <img src="images/contact.png"> | <img src="images/mobile.png"> | <img src="images/mobile2.png">  |
 
