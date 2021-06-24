@@ -22,7 +22,7 @@ const Skils = () => {
     const toggleIsOpen = () => setIsOpen(!IsOpen);
     return (
         <>
-            <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <S.SkilsWrap>
                     <S.SectionTitle>Skils</S.SectionTitle>
                 </S.SkilsWrap>
