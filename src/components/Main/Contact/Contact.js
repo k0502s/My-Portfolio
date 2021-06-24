@@ -11,7 +11,7 @@ const Contact = () => {
             </S.TitleWrap>
             <S.InfoWrap>
                 <div>
-                    <S.EmailIcon /> <b>Email</b> k0502s@naver.com
+                    <S.EmailIcon /> <b>Email</b> kjs960502s@gmail.com
                 </div>
                 <div>
                     <S.PhoneIcon /> <b>Phone</b> 010-7921-7741
