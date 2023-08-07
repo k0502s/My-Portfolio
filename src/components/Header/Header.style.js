@@ -1,34 +1,73 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const Hedaer = styled.div`
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    background-size: cover;
-    width: 100%;
-    & h2 {
-        color: #f9e81c;
-        font-size: 55px;
-        margin-bottom: 20px;
-    }
-    & p {
-        color: #f9e81c;
-        font-size: 25px;
-        margin-bottom: 35px;
-    }
-    @media only screen and (max-width: 767px) {
-        & h2 {
-            font-size: 27px;
-        }
-        & p {
-            font-size: 20px;
-        }
-    }
+const Wrap = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(247, 250, 252);
+  width: 100%;
 `;
 
+const Area = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 768px;
+  padding: 20px;
+`;
 
-export { Hedaer };
+const ProfileBox = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const ProfileImagBox = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 62px;
+  height: 62px;
+  border-radius: 31px;
+  margin-right: 0.75rem;
+  border: 1px solid rgb(79, 209, 197);
+`;
+
+const ProfileImg = styled.img`
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 88%;
+  height: 88%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+`;
+
+const ProfileText = styled.h1`
+  font-weight: inherit;
+  font-size: 1.125rem;
+  margin: 0.67em 0;
+`;
+
+const SideImgBox = styled.div`
+  width: 62px;
+  height: 62px;
+`;
+
+const SideImg = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+export {
+  Wrap,
+  Area,
+  ProfileBox,
+  ProfileImagBox,
+  ProfileImg,
+  ProfileText,
+  SideImgBox,
+  SideImg,
+};

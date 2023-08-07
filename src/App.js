@@ -1,25 +1,21 @@
-import React from 'react';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Main from './components/Main/Main';
-import AppNav from './components/Nav/Nav';
-import 'bootstrap/dist/css/bootstrap.css';
-import GlobalStyle from './assets/GlobalStyle';
-import './assets/custom.css';
+import React from "react";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Footer from "./components/Footer/Footer";
+import GlobalStyle from "./assets/GlobalStyle";
 
+import "bootstrap/dist/css/bootstrap.css";
+// import "./assets/custom.css";
 
 const App = () => {
-    return (
-        <div className="App">
-            <GlobalStyle />
-            <AppNav />
-            <Header />
-            <div id="main-body">
-                <Main />
-            </div>
-            <Footer />
-        </div>
-    );
+  return (
+    <div className="App">
+      <GlobalStyle />
+      <Header />
+      <Main />
+      {/* <Footer /> */}
+    </div>
+  );
 };
 
 export default App;
