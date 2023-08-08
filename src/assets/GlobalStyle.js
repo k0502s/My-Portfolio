@@ -13,14 +13,12 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    font-size: large;
-    font-family: 'Do Hyeon', sans-serif !important;
-    overflow-x: hidden;
-    box-sizing: border-box;
+    color: rgb(60, 54, 107);
 }
 *, *:before, *:after {
     outline: none;
     user-select: none;
+    box-sizing: border-box;
   }
   a,
   a:hover,

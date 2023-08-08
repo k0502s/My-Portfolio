@@ -1,85 +1,94 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const AboutWrap = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & h1 {
-        text-align: center;
-        font-size: 40px;
-        font-weight: normal;
-        position: relative;
-        color: #f9e81c;
-    }
-
-    & h1:before {
-        content: '';
-        position: absolute;
-        margin-left: 46.5%;
-        padding-left: 0;
-        left: 0;
-        width: 56px;
-        height: 110%;
-        border-bottom: 3px solid black;
-    }
+const Wrap = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 250, 252);
+  width: 100%;
 `;
 
-const TapWrap = styled.div`
-    width: 800px;
-    height: 500px;
-    position: relative;
-`;
-const InnerWrap = styled.div`
-    height: 500px;
-    margin-top: 80px;
-    margin-bottom: 70px;
+const Area = styled.div`
+  width: 100%;
+  max-width: 768px;
+  padding: 64px 20px;
 `;
 
-const Items = styled.div`
-    width: 800px;
-    height: 500px;
+const TextBox = styled.div``;
+
+const Occupation = styled.h4`
+  font-size: 0.75rem;
+  color: rgb(90, 103, 216);
+  width: 100%;
+  text-align: left;
+`;
+const Name = styled.h2`
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+`;
+
+const lines = styled.h2`
+  position: relative;
+  width: 0.5rem;
+  height: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: -0.5rem;
+  ::before {
+    content: "";
+    background-color: rgb(102, 126, 234);
+    height: 100%;
+    width: 1px;
     position: absolute;
-    top: 0;
-    left: 0; 
-    transition: 0.5s;
-    
-
-    & a:hover img {
-        width: 120px;
-        height: 120px;
-    }
-    & img {
-        margin-bottom: 20px;
-        padding: 20px;
-        width: 100px;
-        height: 100px;
-        border-radius: 30%;
-        transition: 0.5s;
-        object-fit: cover;
-    }
-    & span:nth-of-type(1) {
-        color: #d7d8d8;
-    }
-    & span:nth-of-type(2) {
-        background-color: #f9e81c;
-        color: #07344e;
-        padding: 4px;
-    }
-    & div {
-        width: 800px;
-        height: 500px;
-        float: left;
-        box-sizing: border-box;
-        text-align: center;
-        padding: 20px;
-    }
-    @media only screen and (max-width: 767px) {
-        & div {
-            padding: 20px 230px 20px 230px;
-            height: 300px;
-        }
-    }
+    left: 0px;
+  }
+  ::after {
+    content: "";
+    background-color: rgb(79, 209, 197);
+    height: 1.5rem;
+    width: 1px;
+    position: absolute;
+    margin-left: 0.25rem;
+  }
 `;
 
-export { AboutWrap, Items, TapWrap, InnerWrap };
+const ContentBox = styled.div`
+  width: 100%;
+  margin-bottom: 2rem;
+`;
+
+const Content = styled.span`
+  word-break: keep-all;
+`;
+
+const LinkBox = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const LinkText = styled.a`
+  cursor: pointer;
+  color: rgb(90, 103, 216);
+`;
+
+const Bottomline = styled.div`
+  height: 1px;
+  background-color: rgb(79, 209, 197);
+`;
+
+export {
+  Wrap,
+  Area,
+  TextBox,
+  Occupation,
+  Name,
+  lines,
+  ContentBox,
+  Content,
+  LinkBox,
+  LinkText,
+  Bottomline,
+};
