@@ -7,7 +7,7 @@ const Header = () => {
       <S.Area>
         <S.ProfileBox>
           <S.ProfileImagBox>
-            <S.ProfileImg src="https://avatars.githubusercontent.com/u/73822147?s=400&u=7aadf41b954303cfb5ac1fca546236bb8a95371c&v=4" />
+            <S.ProfileImg src="https://avatars.githubusercontent.com/u/73822147?s=400&u=0f108060fa76e85bb2f1cf8210e2ee8f9843d0de&v=4" />
           </S.ProfileImagBox>
           <S.ProfileText>Jinseok</S.ProfileText>
         </S.ProfileBox>
