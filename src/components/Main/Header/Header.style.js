@@ -12,7 +12,7 @@ const Area = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 768px;
+  max-width: 992px;
   padding: 20px;
 `;
 

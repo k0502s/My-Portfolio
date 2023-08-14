@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MainWrap = styled.div`
+const MainWrap = styled.main`
   scroll-behavior: smooth;
 `;
 

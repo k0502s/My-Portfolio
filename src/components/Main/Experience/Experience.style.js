@@ -4,7 +4,6 @@ const Wrap = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(247, 250, 252);
   width: 100%;
 `;
 
@@ -14,15 +13,13 @@ const Area = styled.div`
   padding: 64px 20px;
 `;
 
-const TextBox = styled.div``;
-
-const Occupation = styled.h4`
+const Title = styled.h4`
   font-size: 0.75rem;
   color: rgb(90, 103, 216);
   width: 100%;
   text-align: left;
 `;
-const Name = styled.h2`
+const TitleKorean = styled.h2`
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-size: 1.125rem;
@@ -55,40 +52,11 @@ const lines = styled.h2`
   }
 `;
 
-const ContentBox = styled.div`
+const Border = styled.div`
   width: 100%;
-  margin-bottom: 2rem;
+  height: 0x;
+  border-top: 2px solid rgb(102, 126, 234);
+  margin-bottom: 2.5rem;
 `;
 
-const Content = styled.span`
-  word-break: keep-all;
-`;
-
-const LinkBox = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-const LinkText = styled.a`
-  cursor: pointer;
-  color: rgb(90, 103, 216);
-`;
-
-const Bottomline = styled.div`
-  height: 1px;
-  background-color: rgb(79, 209, 197);
-`;
-
-export {
-  Wrap,
-  Area,
-  TextBox,
-  Occupation,
-  Name,
-  lines,
-  ContentBox,
-  Content,
-  LinkBox,
-  LinkText,
-  Bottomline,
-};
+export { Wrap, Area, Title, TitleKorean, lines, Border };
