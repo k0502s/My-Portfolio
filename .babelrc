@@ -1,0 +1,27 @@
+{
+  "presets": ["@babel/typescript", "@babel/preset-env"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ".",
+        "alias": {
+          "@*": "./src",
+          "@assets": "./src/assets",
+          "@types": "./src/@types",
+          "@styles": "./src/styles",
+          "@components": "./src/components",
+          "@constants": "./src/constants",
+          "@hooks": "./src/hooks",
+          "@libs": "./src/libs",
+          "@pages": "./src/pages",
+          "@contexts": "./src/contexts",
+          "@apis": "./src/apis",
+          "@utils": "./src/utils",
+          "@store": "./src/store"
+        },
+        "extensions": [".js", ".jsx", ".tsx"]
+      }
+    ]
+  ]
+}

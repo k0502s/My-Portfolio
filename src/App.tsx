@@ -1,6 +1,5 @@
-import React from "react";
-import Main from "./components/Main/Main";
-import GlobalStyle from "./assets/GlobalStyle";
+import GlobalStyle from "@assets/GlobalStyle";
+import Main from "@components/Main/Main";
 
 import "bootstrap/dist/css/bootstrap.css";
 

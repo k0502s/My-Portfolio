@@ -1,5 +1,4 @@
-import React from "react";
-import * as S from "./About.style";
+import * as S from "@components/Main/About/About.style";
 
 const About = () => {
   return (

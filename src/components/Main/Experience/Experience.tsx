@@ -1,5 +1,4 @@
-import React from "react";
-import * as S from "./Experience.style";
+import * as S from "@components/Main/Experience/Experience.style";
 
 const Experience = () => {
   return (
