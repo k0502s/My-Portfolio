@@ -10,7 +10,6 @@ const Main = () => {
       <Header />
       <About />
       <Experience />
-      {/* <Footer /> */}
     </S.MainWrap>
   );
 };
