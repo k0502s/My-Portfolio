@@ -1,8 +1,8 @@
-import Header from "@components/Main/Header/Header";
-import About from "@components/Main/About/About";
-import Experience from "@components/Main/Experience/Experience";
+import Header from "@pages/Main/Header/Header";
+import About from "@pages/Main/About/About";
+import Experience from "@pages/Main/Experience/Experience";
 // import Footer from "@components/Main/Footer/Footer";
-import * as S from "@components/Main/Main.style";
+import * as S from "@pages/Main/Main.style";
 
 const Main = () => {
   return (

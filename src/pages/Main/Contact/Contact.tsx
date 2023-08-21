@@ -1,5 +1,5 @@
 import tistory from "@components/Main/Contact/images/TISTORY.png";
-import * as S from "@components/Main/Contact/Contact.style";
+import * as S from "@pages/Main/Contact/Contact.style";
 import { BsFillEjectFill } from "react-icons/bs";
 
 const Contact = () => {

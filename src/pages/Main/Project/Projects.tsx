@@ -1,4 +1,4 @@
-import * as S from "@components/Main/Project/Projects.style";
+import * as S from "@pages/Main/Project/Projects.style";
 import mockup_0 from "@components/Main/Project/images/mockup-0.png";
 import mockup_1 from "@components/Main/Project/images/mockup-1.png";
 import mockup_2 from "@components/Main/Project/images/mockup-2.png";

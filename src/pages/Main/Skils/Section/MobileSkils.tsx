@@ -12,7 +12,7 @@ import AWS from "@components/Main/Skils/images/AWS.png";
 import Heroku from "@components/Main/Skils/images/Heroku.png";
 import Git from "@components/Main/Skils/images/Git.png";
 import Jest from "@components/Main/Skils/images/Jest.png";
-import * as S from "@components/Main/Skils/Skils.style";
+import * as S from "@pages/Main/Skils/Skils.style";
 
 interface MobileSkilsProps {
   isOpen: boolean;

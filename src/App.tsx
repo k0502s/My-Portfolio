@@ -1,5 +1,5 @@
 import GlobalStyle from "@assets/GlobalStyle";
-import Main from "@components/Main/Main";
+import Main from "@pages/Main/Main";
 
 import "bootstrap/dist/css/bootstrap.css";
 

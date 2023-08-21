@@ -1,4 +1,4 @@
-import * as S from "@components/Main/Header/Header.style";
+import * as S from "@pages/Main/Header/Header.style";
 
 const Header = () => {
   return (

@@ -1,4 +1,4 @@
-import * as S from "@components/Main/About/About.style";
+import * as S from "@pages/Main/About/About.style";
 
 const About = () => {
   return (
