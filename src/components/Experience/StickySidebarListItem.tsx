@@ -1,9 +1,10 @@
 import React from "react";
+import { ExperienceDataType } from "@@types/Experience";
 import styled from "styled-components";
 
-interface StickySidebarListItemProps {}
+interface StickySidebarListItemProps extends ExperienceDataType {}
 
-const StickySidebarListItem = ({}: StickySidebarListItemProps) => {
+const StickySidebarListItem = ({ Company }: StickySidebarListItemProps) => {
   return (
     <Wrap>
       <SideContentBox>
