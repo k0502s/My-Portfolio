@@ -5,19 +5,25 @@ import styled from "styled-components";
 interface StickySidebarListItemProps extends ExperienceDataType {}
 
 const StickySidebarListItem = ({ Company }: StickySidebarListItemProps) => {
+  const {
+    CompanyName,
+    CompanyDescription,
+    CompanyPosition,
+    CompanyEndPeriod,
+    CompanyStartPeriod,
+  } = Company ?? [];
   return (
     <Wrap>
       <SideContentBox>
         <SideContent>
-          <h3>Sticky sidebar</h3>
+          <CompanyNameText>{CompanyName}</CompanyNameText>
+          <CompanyContentText>{`${CompanyStartPeriod} ~ ${CompanyEndPeriod}`}</CompanyContentText>
+          <CompanyContentText>{CompanyPosition}</CompanyContentText>
+          <CompanySubContentText>{CompanyDescription}</CompanySubContentText>
         </SideContent>
       </SideContentBox>
       <CenterContentBox>
-        <CenterContent>
-          <h2>Main content</h2>
-          <p>Scroll down the page!</p>
-          <h3>How to recreate this</h3>
-        </CenterContent>
+        <CenterContent></CenterContent>
       </CenterContentBox>
     </Wrap>
   );
@@ -39,10 +45,9 @@ const SideContentBox = styled.div`
 `;
 
 const SideContent = styled.div`
+  display: flex;
+  flex-direction: column;
   border: 5px solid $color-dark;
-  background-color: pink;
-  border-radius: 10px;
-
   width: 100%;
   min-height: 200px;
   overflow: auto;
@@ -58,12 +63,36 @@ const CenterContentBox = styled.div`
 `;
 
 const CenterContent = styled.div`
-  border: 5px solid $color-dark;
   background-color: pink;
-  border-radius: 10px;
-
   width: 100%;
   min-height: 1000px;
   display: flex;
   flex-direction: column;
+`;
+
+const CompanyNameText = styled.h3`
+  margin-bottom: 2rem;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  font-weight: bold;
+  color: inherit;
+  font-size: 1.75rem;
+  line-height: 1.5;
+`;
+
+const CompanyContentText = styled.span`
+  white-space: pre-wrap;
+  word-break: keep-all;
+  color: inherit;
+  font-size: 1.5rem;
+  line-height: 1.5;
+`;
+
+const CompanySubContentText = styled.p`
+  margin-top: 1.5rem;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  color: rgb(158, 162, 166);
+  font-size: 0.875rem;
+  line-height: 1.5;
 `;
