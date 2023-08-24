@@ -1,9 +1,18 @@
 export interface ExperienceDataType {
   Company: {
-    CompanyName: string;
-    CompanyStartPeriod: string;
-    CompanyEndPeriod: string;
-    CompanyPosition: string;
-    CompanyDescription: string;
+    companyName: string;
+    companyStartPeriod: string;
+    companyEndPeriod: string;
+    companyPosition: string;
+    companyDescription: string;
   };
+  Projects: {
+    title: string;
+    projectStartPeriod: string;
+    projectEndPeriod: string;
+    projectTechs: string[];
+    projectDescription: string;
+    projectSummaryList: string[];
+    imgs: string[];
+  }[];
 }
