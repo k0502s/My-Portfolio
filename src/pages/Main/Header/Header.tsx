@@ -11,7 +11,7 @@ const Header = () => {
           <S.ProfileText>Jinseok</S.ProfileText>
         </S.ProfileBox>
         <S.SideImgBox>
-          <S.SideImg src="https://kimchunsick.me/resume/character.gif" />
+          {/* <S.SideImg src="https://kimchunsick.me/resume/character.gif" /> */}
         </S.SideImgBox>
       </S.Area>
     </S.Wrap>

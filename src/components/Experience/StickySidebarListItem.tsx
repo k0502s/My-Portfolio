@@ -1,6 +1,7 @@
-import React from "react";
+import { useCallback, useState } from "react";
 import { ExperienceDataType } from "@@types/Experience";
 import styled from "styled-components";
+import Lightbox from "react-18-image-lightbox";
 
 interface StickySidebarListItemProps extends ExperienceDataType {}
 
@@ -15,6 +16,26 @@ const StickySidebarListItem = ({
     companyEndPeriod,
     companyStartPeriod,
   } = Company ?? {};
+
+  const [isOpenImagesModal, setIsOpenImagesModal] = useState<boolean>(false);
+  const [imageIndex, setImageIndex] = useState<number>(0);
+
+  const onMovePrevRequest = useCallback((imageUrls: string[]) => {
+    setImageIndex((prev) => (prev + imageUrls.length - 1) % imageUrls?.length);
+  }, []);
+
+  const onMoveNextRequest = useCallback((imageUrls: string[]) => {
+    setImageIndex((prev) => (prev + 1) % imageUrls?.length);
+  }, []);
+
+  const onClickOpenImagesModal = useCallback((index: number) => {
+    setIsOpenImagesModal(true);
+    setImageIndex(index);
+  }, []);
+
+  const onCloseRequest = useCallback(() => {
+    setIsOpenImagesModal((prev) => !prev);
+  }, []);
 
   return (
     <Wrap>
@@ -31,17 +52,49 @@ const StickySidebarListItem = ({
           <CenterContentBox key={index}>
             <ProjectTitleText>{item?.title}</ProjectTitleText>
             <ProjectPeriodText>{`${item?.projectStartPeriod} ~ ${item?.projectEndPeriod}`}</ProjectPeriodText>
+
+            <ProjectContentText>{item?.projectDescription}</ProjectContentText>
             <ProjectTechBox>
               {item?.projectTechs?.map((item, index) => (
                 <ProjectTechTag>{item}</ProjectTechTag>
               ))}
             </ProjectTechBox>
-            <ProjectContentText>{item?.projectDescription}</ProjectContentText>
             {item?.projectSummaryList?.map((item, index) => (
               <ProjectSummaryListBox key={index}>
                 <ProjectSummaryList>{item ?? ""}</ProjectSummaryList>
               </ProjectSummaryListBox>
             ))}
+            <ImagesArea>
+              {item?.imgs?.map((item, index) => {
+                return (
+                  <ImageBox
+                    key={index}
+                    onClick={() => onClickOpenImagesModal(index)}
+                  >
+                    <ImageSpan>
+                      <Image src={item} />
+                    </ImageSpan>
+                  </ImageBox>
+                );
+              })}
+            </ImagesArea>
+            {item?.imgs?.length > 0 && isOpenImagesModal && (
+              <Lightbox
+                mainSrc={item?.imgs[Number(imageIndex)]}
+                nextSrc={
+                  item?.imgs[(Number(imageIndex) + 1) % item?.imgs.length]
+                }
+                prevSrc={
+                  item?.imgs[
+                    (Number(imageIndex) + item?.imgs.length - 1) %
+                      item?.imgs.length
+                  ]
+                }
+                onCloseRequest={onCloseRequest}
+                onMovePrevRequest={() => onMovePrevRequest(item?.imgs)}
+                onMoveNextRequest={() => onMoveNextRequest(item?.imgs)}
+              />
+            )}
           </CenterContentBox>
         ))}
       </CenterContentArea>
@@ -69,11 +122,11 @@ const SideContentBox = styled.div`
   flex-direction: column;
   border: 5px solid $color-dark;
   width: 100%;
-  min-height: 200px;
   overflow: auto;
   position: -webkit-sticky;
   position: sticky;
   top: 16px;
+  padding-bottom: 32px;
 `;
 
 const CenterContentArea = styled.div`
@@ -86,7 +139,7 @@ const CenterContentBox = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 3.5rem;
+  margin-bottom: 6.5rem;
 `;
 
 const CompanyNameText = styled.h3`
@@ -181,5 +234,54 @@ const ProjectSummaryList = styled.li`
     text-indent: 0px !important;
     text-align: start !important;
     text-align-last: start !important;
+  }
+`;
+
+const ImagesArea = styled.ul`
+  padding: 0;
+`;
+
+const ImageBox = styled.li`
+  display: inline-block;
+  list-style: none;
+  vertical-align: top;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+`;
+
+const ImageSpan = styled.span`
+  color: transparent;
+  display: inline-block;
+`;
+
+const Image = styled.img`
+  @keyframes customCursorAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  display: inline-block;
+  object-fit: cover;
+  margin: 0.6rem 0.6rem 0 0;
+  vertical-align: top;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+  width: 120px;
+  height: 80px;
+  :hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2),
+      0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   }
 `;
