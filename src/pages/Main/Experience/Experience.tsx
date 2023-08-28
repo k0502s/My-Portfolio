@@ -36,6 +36,7 @@ const LIST_DATA: ExperienceDataType[] = [
           "안녕하세요 테스트, 정말 좋습니다.",
           "안녕하세요 테스트, 정말 좋습니다.",
         ],
+        linkUrl: "https://play.google.com/store/apps/details?id=io.myvenus",
         imgs: [
           "https://images.unsplash.com/photo-1682687982502-1529b3b33f85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
           "https://plus.unsplash.com/premium_photo-1671308540017-ef90a992d79c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
@@ -67,6 +68,7 @@ const LIST_DATA: ExperienceDataType[] = [
           "안녕하세요 테스트, 정말 좋습니다.",
           "안녕하세요 테스트, 정말 좋습니다.",
         ],
+        linkUrl: "https://www.myvenus.io/",
         imgs: [
           "https://images.unsplash.com/photo-1682687982502-1529b3b33f85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
           "https://plus.unsplash.com/premium_photo-1671308540017-ef90a992d79c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
@@ -126,6 +128,8 @@ const LIST_DATA: ExperienceDataType[] = [
           "안녕하세요 테스트, 정말 좋습니다.",
           "안녕하세요 테스트, 정말 좋습니다.",
         ],
+        linkUrl:
+          "https://play.google.com/store/apps/details?id=com.gangnkim.homegrit",
         imgs: [
           "https://images.unsplash.com/photo-1682687982502-1529b3b33f85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
           "https://plus.unsplash.com/premium_photo-1671308540017-ef90a992d79c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
@@ -151,6 +155,7 @@ const LIST_DATA: ExperienceDataType[] = [
           "안녕하세요 테스트, 정말 좋습니다.",
           "안녕하세요 테스트, 정말 좋습니다.",
         ],
+        linkUrl: "https://play.google.com/store/apps/details?id=io.myvenus",
         imgs: [
           "https://images.unsplash.com/photo-1682687982502-1529b3b33f85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
           "https://plus.unsplash.com/premium_photo-1671308540017-ef90a992d79c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
@@ -170,6 +175,7 @@ const LIST_DATA: ExperienceDataType[] = [
           "안녕하세요 테스트, 정말 좋습니다.",
           "안녕하세요 테스트, 정말 좋습니다.",
         ],
+        linkUrl: "https://www.bank-mall.co.kr/",
         imgs: [
           "https://images.unsplash.com/photo-1682687982502-1529b3b33f85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
           "https://plus.unsplash.com/premium_photo-1671308540017-ef90a992d79c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
@@ -196,6 +202,7 @@ const LIST_DATA: ExperienceDataType[] = [
           "안녕하세요 테스트, 정말 좋습니다.",
           "안녕하세요 테스트, 정말 좋습니다.",
         ],
+        linkUrl: "https://tudal.co.kr/",
         imgs: [
           "https://images.unsplash.com/photo-1682687982502-1529b3b33f85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
           "https://plus.unsplash.com/premium_photo-1671308540017-ef90a992d79c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
