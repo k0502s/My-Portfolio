@@ -13,6 +13,7 @@ export interface ExperienceDataType {
     projectTechs: string[];
     projectDescription: string;
     projectSummaryList: string[];
+    linkUrl?: string;
     imgs: string[];
   }[];
 }

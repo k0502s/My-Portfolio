@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { ExperienceDataType } from "@@types/Experience";
 import styled from "styled-components";
 import Lightbox from "react-18-image-lightbox";
+import LinkIcon from "@assets/images/iconLink.png";
 
 interface StickySidebarListItemProps extends ExperienceDataType {}
 
@@ -50,7 +51,14 @@ const StickySidebarListItem = ({
       <CenterContentArea>
         {Projects?.map((item, index) => (
           <CenterContentBox key={index}>
-            <ProjectTitleText>{item?.title}</ProjectTitleText>
+            <ProjectTitleText>
+              {(item?.linkUrl?.length ?? 0) > 0 && (
+                <LinkBox onClick={() => window.open(item?.linkUrl)}>
+                  <IconLink src={LinkIcon} />
+                </LinkBox>
+              )}
+              {item?.title}
+            </ProjectTitleText>
             <ProjectPeriodText>{`${item?.projectStartPeriod} ~ ${item?.projectEndPeriod}`}</ProjectPeriodText>
 
             <ProjectContentText>{item?.projectDescription}</ProjectContentText>
@@ -170,13 +178,33 @@ const CompanySubContentText = styled.p`
 `;
 
 const ProjectTitleText = styled.h3`
-  margin-bottom: 1.5rem;
   white-space: pre-wrap;
   word-break: keep-all;
   font-weight: bold;
   color: inherit;
   font-size: 1.75rem;
   line-height: 1.5;
+  margin-bottom: 1.5rem;
+`;
+
+const LinkBox = styled.button`
+  color: inherit;
+  display: inline-block;
+  border: none;
+  align-items: center;
+  background-color: #ffff;
+  cursor: pointer;
+`;
+
+const IconLink = styled.img`
+  width: 20px;
+  height: 20px;
+  margin-right: 1px;
+`;
+
+const LinkText = styled.span`
+  color: inherit;
+  font-size: 1rem;
 `;
 
 const ProjectPeriodText = styled.span`
