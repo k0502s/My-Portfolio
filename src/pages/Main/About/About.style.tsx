@@ -6,6 +6,7 @@ const Wrap = styled.section`
   align-items: center;
   background-color: rgb(247, 250, 252);
   width: 100%;
+  border-bottom: 1px solid #e2e8f0;
 `;
 
 const Area = styled.div`

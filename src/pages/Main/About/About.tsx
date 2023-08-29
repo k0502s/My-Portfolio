@@ -26,8 +26,14 @@ const About = () => {
             Blog
             <S.Bottomline />
           </S.LinkText>
-          <S.LinkText onClick={() => window.open("https://github.com/k0502s")}>
+          <S.LinkText
+            style={{ marginRight: 20 }}
+            onClick={() => window.open("https://github.com/k0502s")}
+          >
             GitHub <S.Bottomline />
+          </S.LinkText>
+          <S.LinkText href="mailto:미정@gmail.com">
+            Contact <S.Bottomline />
           </S.LinkText>
         </S.LinkBox>
       </S.Area>
