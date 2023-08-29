@@ -1,10 +1,27 @@
-import { useCallback, useState } from "react";
+import { memo, useCallback, useState } from "react";
 import { ExperienceDataType } from "@@types/Experience";
 import styled from "styled-components";
 import Lightbox from "react-18-image-lightbox";
 import LinkIcon from "@assets/images/iconLink.png";
+import MarkerListItem from "@components/common/MarkerListItem";
+import TechTagItem from "@components/common/TechTagItem";
 
 interface StickySidebarListItemProps extends ExperienceDataType {}
+
+const PreviewImage = memo(
+  ({ url, onClick }: { url: string; onClick: () => void }) => {
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+
+    return (
+      <ImageBox onClick={onClick}>
+        <ImageSpan>
+          {isLoading && <EmptyImage />}
+          {<Image src={url} onLoad={() => setIsLoading(false)} />}
+        </ImageSpan>
+      </ImageBox>
+    );
+  },
+);
 
 const StickySidebarListItem = ({
   Company,
@@ -60,29 +77,25 @@ const StickySidebarListItem = ({
               {item?.title}
             </ProjectTitleText>
             <ProjectPeriodText>{`${item?.projectStartPeriod} ~ ${item?.projectEndPeriod}`}</ProjectPeriodText>
-
             <ProjectContentText>{item?.projectDescription}</ProjectContentText>
             <ProjectTechBox>
               {item?.projectTechs?.map((item, index) => (
-                <ProjectTechTag>{item}</ProjectTechTag>
+                <TechTagItem key={index} text={item} />
               ))}
             </ProjectTechBox>
             {item?.projectSummaryList?.map((item, index) => (
               <ProjectSummaryListBox key={index}>
-                <ProjectSummaryList>{item ?? ""}</ProjectSummaryList>
+                <MarkerListItem text={item} />
               </ProjectSummaryListBox>
             ))}
             <ImagesArea>
               {item?.imgs?.map((item, index) => {
                 return (
-                  <ImageBox
+                  <PreviewImage
                     key={index}
+                    url={item}
                     onClick={() => onClickOpenImagesModal(index)}
-                  >
-                    <ImageSpan>
-                      <Image src={item} />
-                    </ImageSpan>
-                  </ImageBox>
+                  />
                 );
               })}
             </ImagesArea>
@@ -116,6 +129,9 @@ const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   padding-bottom: 16px;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 const SideContentArea = styled.div`
@@ -123,6 +139,11 @@ const SideContentArea = styled.div`
   flex-direction: column;
   flex: 3 1 30%;
   padding-right: 2rem;
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgb(49, 132, 255);
+  }
 `;
 
 const SideContentBox = styled.div`
@@ -202,11 +223,6 @@ const IconLink = styled.img`
   margin-right: 1px;
 `;
 
-const LinkText = styled.span`
-  color: inherit;
-  font-size: 1rem;
-`;
-
 const ProjectPeriodText = styled.span`
   margin-top: 0.25rem;
   white-space: pre-wrap;
@@ -222,16 +238,6 @@ const ProjectTechBox = styled.div`
   margin-bottom: 0.7rem;
 `;
 
-const ProjectTechTag = styled.span`
-  display: inline-block;
-  margin: 0.5rem 0.4rem 0 0;
-  padding: 3px 8px;
-  font-size: 0.7rem;
-  border: 1px dashed rgb(49, 132, 255);
-  color: inherit;
-  border-radius: 7px;
-`;
-
 const ProjectContentText = styled.p`
   margin-top: 1rem;
   white-space: pre-wrap;
@@ -245,24 +251,6 @@ const ProjectSummaryListBox = styled.ul`
   margin-top: 1rem;
   list-style: disc;
   padding-left: 1.5rem;
-`;
-
-const ProjectSummaryList = styled.li`
-  margin-bottom: 1rem;
-  white-space: pre-wrap;
-  word-break: keep-all;
-  color: inherit;
-  font-size: 1rem;
-  line-height: 1.5;
-  ::marker {
-    color: rgb(49, 132, 255);
-    unicode-bidi: isolate;
-    font-variant-numeric: tabular-nums;
-    text-transform: none;
-    text-indent: 0px !important;
-    text-align: start !important;
-    text-align-last: start !important;
-  }
 `;
 
 const ImagesArea = styled.ul`
@@ -312,4 +300,17 @@ const Image = styled.img`
     box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2),
       0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   }
+`;
+
+const EmptyImage = styled.div`
+  position: absolute;
+  vertical-align: top;
+  width: 120px;
+  height: 80px;
+  border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  margin: 0.6rem 0.6rem 0 0;
+  background-color: rgb(230, 226, 226);
 `;

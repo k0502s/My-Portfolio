@@ -1,3 +1,4 @@
+import SectionTitle from "@components/common/SectionTitle";
 import * as S from "@pages/Main/About/About.style";
 
 const About = () => {
@@ -5,9 +6,7 @@ const About = () => {
     <S.Wrap>
       <S.Area>
         <S.TextBox>
-          <S.Occupation>Frontend Developer</S.Occupation>
-          <S.Name>김진석</S.Name>
-          <S.lines />
+          <SectionTitle title="Frontend Developer" koreaTitle="김진석" />
           <S.ContentBox>
             <S.Content>
               성장, 또 성장하고 싶은 개발자입니다.

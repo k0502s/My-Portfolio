@@ -1,4 +1,5 @@
 import { ExperienceDataType } from "@@types/Experience";
+import SectionTitle from "@components/common/SectionTitle";
 import StickySidebarListItem from "@components/Experience/StickySidebarListItem";
 import * as S from "@pages/Main/Experience/Experience.style";
 
@@ -219,9 +220,7 @@ const Experience = () => {
   return (
     <S.Wrap>
       <S.Area>
-        <S.Title>Experience</S.Title>
-        <S.TitleKorean>이력</S.TitleKorean>
-        <S.lines />
+        <SectionTitle title="Experience" koreaTitle="이력" />
         {LIST_DATA?.map((item, index) => {
           return <StickySidebarListItem key={index} {...item} />;
         })}
