@@ -17,6 +17,12 @@ const About = () => {
             </S.Content>
           </S.ContentBox>
         </S.TextBox>
+        <S.CurrentStatusBox>
+          <S.CurrentStatusText>현재 상태는</S.CurrentStatusText>
+          <S.CurrentStatusTag>
+            <S.CurrentStatusTagText>구직 중!</S.CurrentStatusTagText>
+          </S.CurrentStatusTag>
+        </S.CurrentStatusBox>
       </S.Area>
     </S.Wrap>
   );

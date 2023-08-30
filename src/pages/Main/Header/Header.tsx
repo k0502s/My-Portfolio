@@ -13,7 +13,7 @@ const Header = () => {
         <S.SideBox>
           <S.LinkBox>
             <S.LinkText
-              style={{ marginRight: 20 }}
+              style={{ marginRight: 15 }}
               onClick={() => window.open("https://k0502s.tistory.com")}
             >
               Blog
