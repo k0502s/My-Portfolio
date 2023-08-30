@@ -68,9 +68,9 @@ const StickySidebarListItem = ({
       <CenterContentArea>
         {Projects?.map((item, index) => (
           <CenterContentBox key={index}>
-            <ProjectTitleText>
+            <ProjectTitleText onClick={() => window.open(item?.linkUrl)}>
               {(item?.linkUrl?.length ?? 0) > 0 && (
-                <LinkBox onClick={() => window.open(item?.linkUrl)}>
+                <LinkBox>
                   <IconLink src={LinkIcon} />
                 </LinkBox>
               )}
@@ -206,6 +206,7 @@ const ProjectTitleText = styled.h3`
   font-size: 1.75rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 `;
 
 const LinkBox = styled.button`
@@ -285,6 +286,10 @@ const Image = styled.img`
     transform: scale(1.1);
     box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2),
       0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  }
+  @media screen and (max-width: 768px) {
+    width: 90px;
+    height: 60px;
   }
 `;
 
