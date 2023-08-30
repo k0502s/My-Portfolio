@@ -17,21 +17,6 @@ const About = () => {
             </S.Content>
           </S.ContentBox>
         </S.TextBox>
-        <S.LinkBox>
-          <S.LinkText
-            style={{ marginRight: 20 }}
-            onClick={() => window.open("https://k0502s.tistory.com")}
-          >
-            Blog
-            <S.Bottomline />
-          </S.LinkText>
-          <S.LinkText
-            style={{ marginRight: 20 }}
-            onClick={() => window.open("https://github.com/k0502s")}
-          >
-            GitHub <S.Bottomline />
-          </S.LinkText>
-        </S.LinkBox>
       </S.Area>
     </S.Wrap>
   );

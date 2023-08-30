@@ -51,14 +51,24 @@ const ProfileText = styled.h1`
   margin: 0.67em 0;
 `;
 
-const SideImgBox = styled.div`
-  width: 62px;
-  height: 62px;
+const SideBox = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
-const SideImg = styled.img`
-  width: 100%;
-  height: 100%;
+const LinkBox = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const LinkText = styled.a`
+  cursor: pointer;
+  color: rgb(90, 103, 216);
+`;
+
+const Bottomline = styled.div`
+  height: 1px;
+  background-color: rgb(79, 209, 197);
 `;
 
 export {
@@ -68,6 +78,8 @@ export {
   ProfileImagBox,
   ProfileImg,
   ProfileText,
-  SideImgBox,
-  SideImg,
+  SideBox,
+  LinkBox,
+  LinkText,
+  Bottomline,
 };

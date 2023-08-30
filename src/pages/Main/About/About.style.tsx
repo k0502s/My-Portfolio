@@ -26,28 +26,4 @@ const Content = styled.span`
   word-break: keep-all;
 `;
 
-const LinkBox = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-const LinkText = styled.a`
-  cursor: pointer;
-  color: rgb(90, 103, 216);
-`;
-
-const Bottomline = styled.div`
-  height: 1px;
-  background-color: rgb(79, 209, 197);
-`;
-
-export {
-  Wrap,
-  Area,
-  TextBox,
-  ContentBox,
-  Content,
-  LinkBox,
-  LinkText,
-  Bottomline,
-};
+export { Wrap, Area, TextBox, ContentBox, Content };
