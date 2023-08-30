@@ -31,9 +31,6 @@ const About = () => {
           >
             GitHub <S.Bottomline />
           </S.LinkText>
-          <S.LinkText href="mailto:미정@gmail.com">
-            Contact <S.Bottomline />
-          </S.LinkText>
         </S.LinkBox>
       </S.Area>
     </S.Wrap>
