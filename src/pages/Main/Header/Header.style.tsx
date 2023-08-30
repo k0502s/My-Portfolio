@@ -64,11 +64,8 @@ const LinkBox = styled.div`
 const LinkText = styled.a`
   cursor: pointer;
   color: rgb(90, 103, 216);
-`;
-
-const Bottomline = styled.div`
-  height: 1px;
-  background-color: rgb(79, 209, 197);
+  line-height: 1.5;
+  border-bottom: 1px solid rgb(79, 209, 197);
 `;
 
 export {
@@ -81,5 +78,4 @@ export {
   SideBox,
   LinkBox,
   LinkText,
-  Bottomline,
 };

@@ -17,12 +17,11 @@ const Header = () => {
               onClick={() => window.open("https://k0502s.tistory.com")}
             >
               Blog
-              <S.Bottomline />
             </S.LinkText>
             <S.LinkText
               onClick={() => window.open("https://github.com/k0502s")}
             >
-              GitHub <S.Bottomline />
+              GitHub
             </S.LinkText>
           </S.LinkBox>
         </S.SideBox>
