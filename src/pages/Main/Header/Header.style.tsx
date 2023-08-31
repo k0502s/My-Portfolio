@@ -59,6 +59,9 @@ const SideBox = styled.div`
 const LinkBox = styled.div`
   display: flex;
   flex-direction: row;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const LinkText = styled.a`
@@ -66,6 +69,23 @@ const LinkText = styled.a`
   color: rgb(90, 103, 216);
   line-height: 1.5;
   border-bottom: 1px solid rgb(79, 209, 197);
+  @media only screen and (max-width: 768px) {
+    margin-right: auto;
+  }
+`;
+
+const NavbarListsWrap = styled.div<{ mobileNavbarCollapsed: boolean }>`
+  overflow: hidden;
+  background-color: rgb(247, 250, 252);
+  transition: max-height 0.2s ease-in-out;
+  max-height: ${({ mobileNavbarCollapsed }) =>
+    mobileNavbarCollapsed ? 0 : "100px"};
+`;
+
+const NavbarListsArea = styled.div`
+  display: block;
+  z-index: 1000;
+  padding: 0px 20px;
 `;
 
 export {
@@ -78,4 +98,6 @@ export {
   SideBox,
   LinkBox,
   LinkText,
+  NavbarListsWrap,
+  NavbarListsArea,
 };
