@@ -5,6 +5,7 @@ export interface ExperienceDataType {
     companyEndPeriod: string;
     companyPosition: string;
     companyDescription: string;
+    blogLink?: string;
   };
   Projects: {
     title: string;

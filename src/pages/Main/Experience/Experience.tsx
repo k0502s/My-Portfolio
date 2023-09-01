@@ -12,6 +12,8 @@ const LIST_DATA: ExperienceDataType[] = [
       companyPosition: "Front-End\n서비스 개발/운영/유지보수",
       companyDescription:
         "인도네시아 최초 O2O 뷰티 앱 플랫폼 글로벌 서비스 MyVenus를 프론트엔드 개발자로서 개발/운영하였습니다.\n\n서비스 앱 외주 프로젝트를 통한 인연을 통해 입사하게 되었고 초기 서비스 런칭 또한 함께하였습니다.\n\n저에게 좋은 인연으로 시작된 MyVenus 서비스 개발자로서 개발/운영을 통해 다양한 경험들과 기회를 통해 많은 성장을 하게 되었습니다.",
+      blogLink:
+        "https://k0502s.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B0%9C%EB%B0%9C%20Programming%20Develop/IT%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B0%9C%EB%B0%9C%20%EC%9A%B4%EC%98%81",
     },
     Projects: [
       {
@@ -92,7 +94,7 @@ const LIST_DATA: ExperienceDataType[] = [
           "Jenkins",
         ],
         projectDescription:
-          "회사 내 운영팀이 서비스의 원활한 운영을 위하여 CMS 웹 또한 개발/운영하였습니다. 더 나아가 회사 내부 운영뿐만 아니라 클리닉 사업 동반자들을 파트너들을 위한 Web/App 서비스를 따로 제공해 주며 B2B 사업 확장 스타트를 진행하기도 하였습니다.\n\n약 30% 리드하여 개발/운영을 맡았으며 ReactJs 사용 및 글로벌 서비스를 고려한 설계 및 개발/운영을 진행하였습니다.",
+          "회사 내 운영팀이 서비스의 원활한 운영을 위하여 CMS 웹 또한 개발/운영하였습니다. 회사 내부 운영뿐만 아니라 더 나아가 클리닉 비지니스 파트너들을 위한 Web/App 서비스를 따로 제공해 주며 B2B 사업 확장 스타트를 진행하기도 하였습니다.\n\n약 30% 리드하여 개발/운영을 맡았으며 ReactJs 사용 및 글로벌 서비스를 고려한 설계 및 개발/운영을 진행하였습니다.",
         projectSummaryList: [
           "안녕하세요 테스트, 정말 좋습니다.",
           "안녕하세요 테스트, 정말 좋습니다.",
@@ -113,9 +115,11 @@ const LIST_DATA: ExperienceDataType[] = [
       companyName: "ACTBASE Corp.",
       companyStartPeriod: "2021.7",
       companyEndPeriod: "2022.06",
-      companyPosition: "Front-End\nSi 개발/유지보수",
+      companyPosition: "Front-End\nSI 개발/유지보수",
       companyDescription:
         "첫 직장, 첫 개발 프로젝트, 모든 게 새롭게 느껴지는 시기였습니다. 개발 업계의 환경과 분위기를 알게 된 뜻깊은 시간이었습니다.\n\n길지 않은 시기 동안 다양한 프로젝트들을 경험했던 것이 개발에 대한 기본역량과 시야를 넓히게 되었던 거 같습니다.",
+      blogLink:
+        "https://k0502s.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B0%9C%EB%B0%9C%20Programming%20Develop/IT%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B0%9C%EB%B0%9C%20%EC%9A%B4%EC%98%81",
     },
     Projects: [
       {

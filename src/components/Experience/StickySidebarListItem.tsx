@@ -33,6 +33,7 @@ const StickySidebarListItem = ({
     companyPosition,
     companyEndPeriod,
     companyStartPeriod,
+    blogLink,
   } = Company ?? {};
 
   const [isOpenImagesModal, setIsOpenImagesModal] = useState<boolean>(false);
@@ -63,6 +64,11 @@ const StickySidebarListItem = ({
           <CompanyContentText>{`${companyStartPeriod} ~ ${companyEndPeriod}`}</CompanyContentText>
           <CompanyContentText>{companyPosition}</CompanyContentText>
           <CompanySubContentText>{companyDescription}</CompanySubContentText>
+          {(blogLink?.length ?? 0) > 0 && (
+            <BlogText onClick={() => window.open(blogLink)}>
+              블로그 글 보러 가기
+            </BlogText>
+          )}
         </SideContentBox>
       </SideContentArea>
       <CenterContentArea>
@@ -132,6 +138,14 @@ const Wrap = styled.div`
   @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
+`;
+
+const BlogText = styled.span`
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: rgb(90, 103, 216);
+  cursor: pointer;
 `;
 
 const SideContentArea = styled.div`

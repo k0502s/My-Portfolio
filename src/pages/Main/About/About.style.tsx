@@ -28,7 +28,7 @@ const TextBox = styled.div``;
 
 const ContentBox = styled.div`
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 `;
 
 const Content = styled.span`

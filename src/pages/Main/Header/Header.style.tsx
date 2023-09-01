@@ -66,9 +66,9 @@ const LinkBox = styled.div`
 
 const LinkText = styled.a`
   cursor: pointer;
-  color: rgb(90, 103, 216);
+  color: inherit;
   line-height: 1.5;
-  border-bottom: 1px solid rgb(79, 209, 197);
+  border-bottom: 1px solid rgb(49, 132, 255);
   @media only screen and (max-width: 768px) {
     margin-right: auto;
   }
