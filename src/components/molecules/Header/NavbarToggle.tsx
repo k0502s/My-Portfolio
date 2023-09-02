@@ -9,7 +9,7 @@ interface NavbarToggleProps {
 const NavbarToggle = ({ collapsed, onClickMethod }: NavbarToggleProps) => {
   const onClick = useCallback(() => {
     onClickMethod(!collapsed);
-  }, [collapsed]);
+  }, [onClickMethod, collapsed]);
 
   return (
     <Toggle type="button" onClick={onClick}>

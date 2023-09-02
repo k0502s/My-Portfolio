@@ -18,7 +18,7 @@ export const useMediaQuery = (width: number) => {
     return () => {
       window.removeEventListener("resize", resizeWindow);
     };
-  }, [windowWidth]);
+  }, [windowWidth, resizeWindow]);
 
   return result;
 };
