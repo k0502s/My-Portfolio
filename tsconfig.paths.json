@@ -14,7 +14,8 @@
       "@libs/*": ["src/libs/*"],
       "@pages/*": ["src/pages/*"],
       "@contexts/*": ["src/contexts/*"],
-      "@store/*": ["src/store/*"]
+      "@store/*": ["src/store/*"],
+      "@data/*": ["src/data/*"]
     }
   }
 }

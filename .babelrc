@@ -18,7 +18,8 @@
           "@contexts": "./src/contexts",
           "@apis": "./src/apis",
           "@utils": "./src/utils",
-          "@store": "./src/store"
+          "@store": "./src/store",
+          "@data": "./src/data"
         },
         "extensions": [".js", ".jsx", ".tsx"]
       }
