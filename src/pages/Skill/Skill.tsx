@@ -1,7 +1,7 @@
 import SectionTitle from "@components/molecules/common/SectionTitle";
 import SkillListItem from "@components/molecules/Skill/SkillListItem";
 import { SKILL_LIST } from "@data/Skill";
-import * as S from "@pages/Main/Skill/Skill.style";
+import * as S from "@pages/Skill/Skill.style";
 
 const Skill = () => {
   return (

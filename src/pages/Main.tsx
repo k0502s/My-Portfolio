@@ -1,11 +1,11 @@
-import Header from "@pages/Main/Header/Header";
-import About from "@pages/Main/About/About";
-import Skill from "@pages/Main/Skill/Skill";
-import Experience from "@pages/Main/Experience/Experience";
+import Header from "@pages/Header/Header";
+import About from "@pages/About/About";
+import Skill from "@pages/Skill/Skill";
+import Experience from "@pages/Experience/Experience";
 import Hobby from "./Hobby/Hobby";
 import Footer from "./Footer/Footer";
 import styled from "styled-components";
-import * as S from "@pages/Main/Main.style";
+import * as S from "@pages/Main.style";
 
 const Main = () => {
   return (

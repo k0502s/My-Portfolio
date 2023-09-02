@@ -1,4 +1,4 @@
-import * as S from "@pages/Main/Footer/Footer.style";
+import * as S from "@pages/Footer/Footer.style";
 
 const Footer = () => {
   const thisYear = () => {

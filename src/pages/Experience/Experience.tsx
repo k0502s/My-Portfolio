@@ -1,7 +1,7 @@
 import SectionTitle from "@components/molecules/common/SectionTitle";
 import StickySidebarListItem from "@components/molecules/Experience/StickySidebarListItem";
 import { EXPERIENCE_LIST } from "@data/Experience";
-import * as S from "@pages/Main/Experience/Experience.style";
+import * as S from "@pages/Experience/Experience.style";
 
 const Experience = () => {
   return (

@@ -1,7 +1,7 @@
 import SectionTitle from "@components/molecules/common/SectionTitle";
 import HobbyListItem from "@components/molecules/Hobby/HobbyListItem";
 import { HOBBY_LIST } from "@data/Hobby";
-import * as S from "@pages/Main/Hobby/Hobby.style";
+import * as S from "@pages/Hobby/Hobby.style";
 
 const Hobby = () => {
   return (
