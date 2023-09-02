@@ -3,8 +3,8 @@ import { ExperienceDataType } from "@@types/Experience";
 import styled from "styled-components";
 import Lightbox from "react-18-image-lightbox";
 import LinkIcon from "@assets/images/iconLink.png";
-import MarkerListItem from "@components/common/MarkerListItem";
-import TechTagItem from "@components/common/TechTagItem";
+import MarkerListItem from "@components/atoms/common/MarkerListItem";
+import TechTagItem from "@components/atoms/common/TechTagItem";
 
 interface StickySidebarListItemProps extends ExperienceDataType {}
 
@@ -24,8 +24,8 @@ const PreviewImage = memo(
 );
 
 const StickySidebarListItem = ({
-  Company,
-  Projects,
+  company,
+  projects,
 }: StickySidebarListItemProps) => {
   const {
     companyName,
@@ -34,7 +34,7 @@ const StickySidebarListItem = ({
     companyEndPeriod,
     companyStartPeriod,
     blogLink,
-  } = Company ?? {};
+  } = company ?? {};
 
   const [isOpenImagesModal, setIsOpenImagesModal] = useState<boolean>(false);
   const [imageIndex, setImageIndex] = useState<number>(0);
@@ -72,7 +72,7 @@ const StickySidebarListItem = ({
         </SideContentBox>
       </SideContentArea>
       <CenterContentArea>
-        {Projects?.map((item, index) => (
+        {projects?.map((item, index) => (
           <CenterContentBox key={index}>
             <ProjectTitleText onClick={() => window.open(item?.linkUrl)}>
               {(item?.linkUrl?.length ?? 0) > 0 && (
@@ -131,10 +131,12 @@ const StickySidebarListItem = ({
 
 export default StickySidebarListItem;
 
-const Wrap = styled.div`
+const Wrap = styled.li`
   display: flex;
   justify-content: space-between;
-  padding-bottom: 16px;
+  :not(:last-child) {
+    margin-bottom: 16px;
+  }
   @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
@@ -182,7 +184,7 @@ const CenterContentBox = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 6.5rem;
+  margin-bottom: 4rem;
 `;
 
 const CompanyNameText = styled.h3`

@@ -1,5 +1,5 @@
 export interface ExperienceDataType {
-  Company: {
+  company: {
     companyName: string;
     companyStartPeriod: string;
     companyEndPeriod: string;
@@ -7,7 +7,7 @@ export interface ExperienceDataType {
     companyDescription: string;
     blogLink?: string;
   };
-  Projects: {
+  projects: {
     title: string;
     projectStartPeriod: string;
     projectEndPeriod: string;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NavbarToggle from "@components/Header/NavbarToggle";
+import NavbarToggle from "@components/molecules/Header/NavbarToggle";
 import { useMediaQuery } from "@hooks/useMediaQuery";
 import * as S from "@pages/Main/Header/Header.style";
 

@@ -1,7 +1,7 @@
 import Header from "@pages/Main/Header/Header";
 import About from "@pages/Main/About/About";
 import Experience from "@pages/Main/Experience/Experience";
-import Skil from "@pages/Main/Skil/Skil";
+import Skill from "@pages/Main/Skill/Skill";
 // import Footer from "@components/Main/Footer/Footer";
 import * as S from "@pages/Main/Main.style";
 import styled from "styled-components";
@@ -12,7 +12,7 @@ const Main = () => {
       <Header />
       <ContentBox>
         <About />
-        <Skil />
+        <Skill />
         <Experience />
       </ContentBox>
       {/* <Footer /> */}

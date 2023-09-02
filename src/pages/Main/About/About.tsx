@@ -1,4 +1,4 @@
-import SectionTitle from "@components/common/SectionTitle";
+import SectionTitle from "@components/molecules/common/SectionTitle";
 import * as S from "@pages/Main/About/About.style";
 
 const About = () => {

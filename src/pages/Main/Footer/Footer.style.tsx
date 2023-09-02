@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const FooterWrap = styled.div`
+const FooterWrap = styled.footer`
   padding: 50px 0;
   background-color: #091e2a;
   color: #fff;

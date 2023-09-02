@@ -1,11 +1,11 @@
 import { ExperienceDataType } from "@@types/Experience";
-import SectionTitle from "@components/common/SectionTitle";
-import StickySidebarListItem from "@components/Experience/StickySidebarListItem";
+import SectionTitle from "@components/molecules/common/SectionTitle";
+import StickySidebarListItem from "@components/molecules/Experience/StickySidebarListItem";
 import * as S from "@pages/Main/Experience/Experience.style";
 
-const LIST_DATA: ExperienceDataType[] = [
+const EXPERIENCE_LIST: ExperienceDataType[] = [
   {
-    Company: {
+    company: {
       companyName: "SUMMITS Corp.",
       companyStartPeriod: "2022.6",
       companyEndPeriod: "2023.10",
@@ -13,9 +13,9 @@ const LIST_DATA: ExperienceDataType[] = [
       companyDescription:
         "인도네시아 최초 O2O 뷰티 앱 플랫폼 글로벌 서비스 MyVenus를 프론트엔드 개발자로서 개발/운영하였습니다.\n\n서비스 앱 외주 프로젝트를 통한 인연을 통해 입사하게 되었고 초기 서비스 런칭 또한 함께하였습니다.\n\n저에게 좋은 인연으로 시작된 MyVenus 서비스 개발자로서 개발/운영을 통해 다양한 경험들과 기회를 통해 많은 성장을 하게 되었습니다.",
       blogLink:
-        "https://k0502s.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B0%9C%EB%B0%9C%20Programming%20Develop/IT%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B0%9C%EB%B0%9C%20%EC%9A%B4%EC%98%81",
+        "https://k0502s.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B0%9C%EB%B0%9C/IT%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B0%9C%EB%B0%9C%20%EC%9A%B4%EC%98%81",
     },
-    Projects: [
+    projects: [
       {
         title: "마이 비너스 인도네시아 뷰티 플랫폼 서비스 APP",
         projectStartPeriod: "2022.6",
@@ -111,7 +111,7 @@ const LIST_DATA: ExperienceDataType[] = [
     ],
   },
   {
-    Company: {
+    company: {
       companyName: "ACTBASE Corp.",
       companyStartPeriod: "2021.7",
       companyEndPeriod: "2022.06",
@@ -119,9 +119,9 @@ const LIST_DATA: ExperienceDataType[] = [
       companyDescription:
         "첫 직장, 첫 개발 프로젝트, 모든 게 새롭게 느껴지는 시기였습니다. 개발 업계의 환경과 분위기를 알게 된 뜻깊은 시간이었습니다.\n\n길지 않은 시기 동안 다양한 프로젝트들을 경험했던 것이 개발에 대한 기본역량과 시야를 넓히게 되었던 거 같습니다.",
       blogLink:
-        "https://k0502s.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B0%9C%EB%B0%9C%20Programming%20Develop/IT%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B0%9C%EB%B0%9C%20%EC%9A%B4%EC%98%81",
+        "https://k0502s.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B0%9C%EB%B0%9C/IT%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B0%9C%EB%B0%9C%20%EC%9A%B4%EC%98%81",
     },
-    Projects: [
+    projects: [
       {
         title: "홈그릿 인테리어 쇼핑 서비스 APP",
         projectStartPeriod: "2023.4",
@@ -225,7 +225,7 @@ const Experience = () => {
     <S.Wrap>
       <S.Area>
         <SectionTitle title="Experience" koreaTitle="이력" />
-        {LIST_DATA?.map((item, index) => {
+        {EXPERIENCE_LIST?.map((item, index) => {
           return <StickySidebarListItem key={index} {...item} />;
         })}
       </S.Area>
