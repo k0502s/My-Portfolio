@@ -1,10 +1,11 @@
 import Header from "@pages/Main/Header/Header";
 import About from "@pages/Main/About/About";
-import Experience from "@pages/Main/Experience/Experience";
 import Skill from "@pages/Main/Skill/Skill";
+import Experience from "@pages/Main/Experience/Experience";
+import Hobby from "./Hobby/Hobby";
 import Footer from "./Footer/Footer";
-import * as S from "@pages/Main/Main.style";
 import styled from "styled-components";
+import * as S from "@pages/Main/Main.style";
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
         <About />
         <Skill />
         <Experience />
+        <Hobby />
       </ContentBox>
       <Footer />
     </S.MainWrap>
