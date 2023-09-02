@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 const FooterWrap = styled.footer`
-  padding: 50px 0;
-  background-color: #091e2a;
-  color: #fff;
-  font-size: small;
-  font-family: none;
-  & p {
-    text-align: center;
-    letter-spacing: 0.2em;
-    margin: 0;
-  }
+  padding: 2rem 0;
 `;
 
-export { FooterWrap };
+const CopyRightText = styled.p`
+  white-space: pre-wrap;
+  word-break: keep-all;
+  text-align: center;
+  color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.5;
+`;
+
+export { FooterWrap, CopyRightText };

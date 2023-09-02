@@ -5,15 +5,11 @@ const Footer = () => {
     const year = new Date().getFullYear();
     return year;
   };
+
   return (
-    <>
-      <S.FooterWrap>
-        <p>
-          Copyright &copy;
-          <span>{thisYear()} Jin Seok Kim All rights reserved.</span>
-        </p>
-      </S.FooterWrap>
-    </>
+    <S.FooterWrap>
+      <S.CopyRightText>{`Copyright ⓒ ${thisYear()} Jinseok Kim All rights reserved.`}</S.CopyRightText>
+    </S.FooterWrap>
   );
 };
 

@@ -131,7 +131,7 @@ const StickySidebarListItem = ({
 
 export default StickySidebarListItem;
 
-const Wrap = styled.li`
+const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   :not(:last-child) {
