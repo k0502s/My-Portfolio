@@ -2,38 +2,25 @@ import Header from "@pages/Header/Header";
 import About from "@pages/About/About";
 import Skill from "@pages/Skill/Skill";
 import Experience from "@pages/Experience/Experience";
-import Hobby from "./Hobby/Hobby";
+import Hobby from "@pages/Hobby/Hobby";
+import Contact from "@pages/Contact/Contact";
 import Footer from "./Footer/Footer";
-import styled from "styled-components";
 import * as S from "@pages/Main.style";
 
 const Main = () => {
   return (
-    <S.MainWrap>
+    <S.Wrap>
       <Header />
-      <ContentBox>
+      <S.ContentArea>
         <About />
         <Skill />
         <Experience />
         <Hobby />
-      </ContentBox>
+        <Contact />
+      </S.ContentArea>
       <Footer />
-    </S.MainWrap>
+    </S.Wrap>
   );
 };
 
 export default Main;
-
-const ContentBox = styled.div`
-  animation: fade 0.5s ease-in-out alternate;
-  @keyframes fade {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-`;
