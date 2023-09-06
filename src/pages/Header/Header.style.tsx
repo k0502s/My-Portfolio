@@ -79,7 +79,7 @@ const NavbarListsWrap = styled.div<{ mobileNavbarCollapsed: boolean }>`
   background-color: rgb(247, 250, 252);
   transition: max-height 0.2s ease-in-out;
   max-height: ${({ mobileNavbarCollapsed }) =>
-    mobileNavbarCollapsed ? 0 : "100px"};
+    mobileNavbarCollapsed ? 0 : "120px"};
 `;
 
 const NavbarListsArea = styled.div`

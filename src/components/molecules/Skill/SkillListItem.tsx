@@ -34,7 +34,7 @@ export default memo(SkillListItem);
 
 const Wrap = styled.div`
   :not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 `;
 

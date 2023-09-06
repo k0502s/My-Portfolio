@@ -4,7 +4,8 @@ import Skill from "@pages/Skill/Skill";
 import Experience from "@pages/Experience/Experience";
 import Hobby from "@pages/Hobby/Hobby";
 import Contact from "@pages/Contact/Contact";
-import Footer from "./Footer/Footer";
+import Channel from "@pages/Channel/Channel";
+import Footer from "@pages//Footer/Footer";
 import * as S from "@pages/Main.style";
 
 const Main = () => {
@@ -16,6 +17,7 @@ const Main = () => {
         <Skill />
         <Experience />
         <Hobby />
+        <Channel />
         <Contact />
       </S.ContentArea>
       <Footer />

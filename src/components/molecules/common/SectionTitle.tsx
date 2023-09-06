@@ -1,27 +1,44 @@
-import React, { memo } from "react";
+import React, { memo, useMemo } from "react";
 import styled from "styled-components";
 
 interface SectionTitleProps {
   title: string;
   koreaTitle: string;
+  align?: "right" | "center" | "left";
 }
 
-const SectionTitle = ({ title, koreaTitle }: SectionTitleProps) => {
+const SectionTitle = ({ title, koreaTitle, align }: SectionTitleProps) => {
+  const alignItems = useMemo(() => {
+    switch (align) {
+      case "center":
+        return "center";
+      case "right":
+        return "flex-end";
+      case "left":
+      default:
+        return "flex-start";
+    }
+  }, [align]);
+
   return (
-    <>
+    <Wrap style={{ alignItems }}>
       <Title>{title}</Title>
       <TitleKorean>{koreaTitle}</TitleKorean>
       <Lines />
-    </>
+    </Wrap>
   );
 };
 
 export default memo(SectionTitle);
 
+const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const Title = styled.h4`
   font-size: 0.75rem;
   color: rgb(90, 103, 216);
-  width: 100%;
   text-align: left;
   margin-bottom: 5px;
 `;
@@ -30,7 +47,7 @@ const TitleKorean = styled.h2`
   margin-bottom: 1rem;
   font-size: 1.125rem;
   font-weight: 700;
-  width: 100%;
+
   text-align: left;
 `;
 

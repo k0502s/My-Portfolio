@@ -9,11 +9,18 @@ const About = () => {
           <SectionTitle title="Frontend Developer" koreaTitle="김진석" />
           <S.ContentBox>
             <S.Content>
-              성장, 또 성장하고 싶은 개발자입니다.
+              성장, 또 성장하고 싶은 개발자 김진석입니다.
               <br />
               <br />
               개발자 경력 3년차인 지금, 항상 과거와 미래를 생각하며 개발에
               임하고 있습니다.
+              <br />
+              <br />
+              <br />
+              <br />
+              현재는 프론트엔드 포지션으로 활동중이며 처음에는 단순한 기능
+              개발에서 한 발 더 나아가 서비스 운영/개발을 하면서 개발에 대하여
+              더 애정을 가지고 임하고 있습니다.
             </S.Content>
           </S.ContentBox>
         </S.TextBox>

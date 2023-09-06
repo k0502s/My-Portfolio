@@ -33,6 +33,7 @@ const ContentBox = styled.div`
 
 const Content = styled.span`
   word-break: keep-all;
+  line-height: 1.5;
 `;
 
 const CurrentStatusBox = styled.div`
