@@ -59,16 +59,30 @@ const SideBox = styled.div`
 const LinkBox = styled.div`
   display: flex;
   flex-direction: row;
+  text-decoration: none;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
 
 const LinkText = styled.a`
-  cursor: pointer;
+  position: relative;
   color: inherit;
-  line-height: 1.5;
-  border-bottom: 1px solid rgb(49, 132, 255);
+  cursor: pointer;
+  &:hover::before {
+    width: 100%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(79, 209, 197);
+    transition: all 0.2s ease 0s;
+  }
   @media only screen and (max-width: 768px) {
     margin-right: auto;
   }
