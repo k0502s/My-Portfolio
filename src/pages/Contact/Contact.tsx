@@ -1,5 +1,6 @@
 import SectionTitle from "@components/molecules/common/SectionTitle";
 import EmailIcon from "@assets/images/iconEmail.svg";
+import PhoneIcon from "@assets/images/iconPhone.svg";
 import * as S from "@pages/Contact/Contact.style";
 
 const Contact = () => {
@@ -15,6 +16,15 @@ const Contact = () => {
             <S.BorderBoxTitle>이메일</S.BorderBoxTitle>
             <S.BorderBoxContent href="mailto:k0502s.dev@gmail.com">
               k0502s.dev@gamil.com
+            </S.BorderBoxContent>
+          </S.BorderBox>
+          <S.BorderBox>
+            <S.BorderBoxIconBox>
+              <S.BorderBoxIcon src={PhoneIcon} />
+            </S.BorderBoxIconBox>
+            <S.BorderBoxTitle>연락처</S.BorderBoxTitle>
+            <S.BorderBoxContent href="tel:01077777777">
+              010-7777-7777
             </S.BorderBoxContent>
           </S.BorderBox>
         </S.BorderBoxBox>

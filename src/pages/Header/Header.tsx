@@ -25,12 +25,12 @@ const Header = () => {
               />
             ) : (
               <S.LinkBox>
-                <S.LinkText
+                {/* <S.LinkText
                   style={{ marginRight: 20 }}
                   href="mailto:k0502s.dev@gmail.com"
                 >
                   Email
-                </S.LinkText>
+                </S.LinkText> */}
                 <S.LinkText
                   style={{ marginRight: 20 }}
                   onClick={() => window.open("https://k0502s.tistory.com")}
@@ -51,12 +51,12 @@ const Header = () => {
         <S.NavbarListsWrap mobileNavbarCollapsed={mobileNavbarCollapsed}>
           <S.NavbarListsArea>
             <S.LinkBox>
-              <S.LinkText
+              {/* <S.LinkText
                 style={{ marginBottom: 15 }}
                 href="mailto:k0502s.dev@gmail.com"
               >
                 Email
-              </S.LinkText>
+              </S.LinkText> */}
               <S.LinkText
                 style={{ marginBottom: 15 }}
                 onClick={() => window.open("https://k0502s.tistory.com")}

@@ -12,13 +12,14 @@ const Area = styled.div`
   width: 100%;
   max-width: 992px;
   padding: 64px 40px;
-  @media only screen and (max-width: 992px) {
-  }
 `;
 
 const BorderBoxBox = styled.div`
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 992px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const BorderBox = styled.div`
@@ -31,7 +32,13 @@ const BorderBox = styled.div`
   border-radius: 0.5rem;
   padding: 1rem;
   margin-bottom: 1rem;
+  :not(:last-child) {
+    margin-right: 20px;
+  }
   @media only screen and (max-width: 768px) {
+    :not(:last-child) {
+      margin-right: 0px;
+    }
     width: 100%;
   }
 `;
