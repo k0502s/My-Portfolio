@@ -1,9 +1,9 @@
-import React, { memo, useMemo } from "react";
+import React, { memo, ReactNode, useMemo } from "react";
 import styled from "styled-components";
 
 interface SectionTitleProps {
   title: string;
-  koreaTitle: string;
+  koreaTitle: string | ReactNode;
   align?: "right" | "center" | "left";
 }
 
@@ -47,7 +47,6 @@ const TitleKorean = styled.h2`
   margin-bottom: 1rem;
   font-size: 1.125rem;
   font-weight: 700;
-
   text-align: left;
 `;
 

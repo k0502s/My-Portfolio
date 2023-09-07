@@ -2,19 +2,33 @@ import SectionTitle from "@components/molecules/common/SectionTitle";
 import * as S from "@pages/About/About.style";
 
 const About = () => {
+  const koreaTitle = (
+    <>
+      <span style={{ lineHeight: 1.5 }}>김진석</span>
+      <br />
+      <span
+        style={{
+          fontSize: "0.9rem",
+          color: "rgb(142, 148, 153)",
+          fontWeight: 500,
+        }}
+      >
+        1996년 | 남 | 서울 서대문구
+      </span>
+    </>
+  );
+
   return (
     <S.Wrap>
       <S.Area>
         <S.TextBox>
-          <SectionTitle title="Frontend Developer" koreaTitle="김진석" />
+          <SectionTitle title="Frontend Developer" koreaTitle={koreaTitle} />
           <S.ContentBox>
             <S.Content>
               성장, 또 성장하고 싶은 개발자 김진석입니다.
               <br />
-              <br />
               개발자 경력 3년차인 지금, 항상 과거와 미래를 생각하며 개발에
               임하고 있습니다.
-              <br />
               <br />
               <br />
               <br />
