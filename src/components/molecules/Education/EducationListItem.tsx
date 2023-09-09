@@ -1,13 +1,13 @@
 import { memo } from "react";
-import { HobbyListDataType } from "@@types/Hobby";
+import { EducationListDataType } from "@@types/Education";
 import MarkerListItem from "@components/atoms/common/MarkerListItem";
 import styled from "styled-components";
 
-interface HobbyListItemProps {
-  data: HobbyListDataType;
+interface EducationListItemProps {
+  data: EducationListDataType;
 }
 
-const HobbyListItem = ({ data }: HobbyListItemProps) => {
+const EducationListItem = ({ data }: EducationListItemProps) => {
   const { title, description } = data ?? {};
   return (
     <Wrap>
@@ -23,7 +23,7 @@ const HobbyListItem = ({ data }: HobbyListItemProps) => {
   );
 };
 
-export default memo(HobbyListItem);
+export default memo(EducationListItem);
 
 const Wrap = styled.div`
   :not(:last-child) {
@@ -32,7 +32,7 @@ const Wrap = styled.div`
 `;
 
 const TitleBox = styled.div`
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
 `;
 
 const Title = styled.span`

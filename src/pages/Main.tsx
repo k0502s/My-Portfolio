@@ -6,6 +6,7 @@ import Hobby from "@pages/Hobby/Hobby";
 import Contact from "@pages/Contact/Contact";
 import Channel from "@pages/Channel/Channel";
 import Footer from "@pages//Footer/Footer";
+import Education from "@pages/Education/Education";
 import * as S from "@pages/Main.style";
 
 const Main = () => {
@@ -16,6 +17,7 @@ const Main = () => {
         <About />
         <Skill />
         <Experience />
+        <Education />
         <Hobby />
         <Channel />
         <Contact />

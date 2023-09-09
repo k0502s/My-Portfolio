@@ -1,6 +1,6 @@
-import { HobbyDataType } from "@@types/Hobby";
+import { HobbyListDataType } from "@@types/Hobby";
 
-export const HOBBY_LIST: HobbyDataType[] = [
+export const HOBBY_LIST: HobbyListDataType[] = [
   {
     title: "개발",
     description: ["개발이 좋아요"],

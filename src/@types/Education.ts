@@ -1,4 +1,4 @@
-export interface HobbyListDataType {
+export interface EducationListDataType {
   title: string;
   description: string[];
 }
