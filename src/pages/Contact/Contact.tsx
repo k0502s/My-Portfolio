@@ -24,7 +24,7 @@ const Contact = () => {
             </S.BorderBoxIconBox>
             <S.BorderBoxTitle>연락처</S.BorderBoxTitle>
             <S.BorderBoxContent href="tel:01077777777">
-              010-7777-7777
+              +82 10 7777 7777
             </S.BorderBoxContent>
           </S.BorderBox>
         </S.BorderBoxBox>

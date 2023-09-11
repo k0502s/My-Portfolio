@@ -27,7 +27,7 @@ const Area = styled.div`
 const TextBox = styled.div``;
 
 const ContentBox = styled.div`
-  width: 100%;
+  max-width: 830px;
   margin-bottom: 3.5rem;
 `;
 

@@ -16,7 +16,9 @@ const HobbyListItem = ({ data }: HobbyListItemProps) => {
       </TitleBox>
       <DescriptionListBox>
         {description?.map((item, index) => (
-          <MarkerListItem key={index} text={item} />
+          <MarkerListItemBox key={index}>
+            <MarkerListItem text={item} />
+          </MarkerListItemBox>
         ))}
       </DescriptionListBox>
     </Wrap>
@@ -42,6 +44,12 @@ const Title = styled.span`
   color: inherit;
   font-size: 1.25rem;
   line-height: 1.5;
+`;
+
+const MarkerListItemBox = styled.ul`
+  margin-top: 1rem;
+  list-style: disc;
+  padding-left: 1.5rem;
 `;
 
 const DescriptionListBox = styled.div``;

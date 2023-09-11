@@ -23,7 +23,9 @@ const SkillListItem = ({ data }: SkillListItemProps) => {
       </TagBox>
       <DescriptionListBox>
         {description?.map((item, index) => (
-          <MarkerListItem key={index} text={item} />
+          <MarkerListItemBox key={index}>
+            <MarkerListItem text={item} />
+          </MarkerListItemBox>
         ))}
       </DescriptionListBox>
     </Wrap>
@@ -53,6 +55,12 @@ const Title = styled.span`
 
 const TagBox = styled.div`
   margin-bottom: 1rem;
+`;
+
+const MarkerListItemBox = styled.ul`
+  margin-top: 1rem;
+  list-style: disc;
+  padding-left: 1.5rem;
 `;
 
 const DescriptionListBox = styled.div``;

@@ -12,7 +12,6 @@ const MarkerListItem = ({ text }: MarkerListItemProps) => {
 export default memo(MarkerListItem);
 
 const MarkerList = styled.li`
-  margin-bottom: 1rem;
   white-space: pre-wrap;
   word-break: keep-all;
   color: inherit;

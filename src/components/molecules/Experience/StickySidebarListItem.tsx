@@ -272,6 +272,7 @@ const ProjectSummaryListBox = styled.ul`
 
 const ImagesArea = styled.ul`
   padding: 0;
+  margin-top: 1rem;
 `;
 
 const ImageBox = styled.li`

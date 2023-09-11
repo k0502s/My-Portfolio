@@ -14,7 +14,7 @@ const Contact = () => {
             <S.BorderBoxIconBox>
               <S.BorderBoxIcon src={BlogIcon} />
             </S.BorderBoxIconBox>
-            <S.BorderBoxTitle>Blog</S.BorderBoxTitle>
+            <S.BorderBoxTitle>Tech Blog</S.BorderBoxTitle>
             <S.BorderBoxContent
               onClick={() => window.open("https://k0502s.tistory.com")}
             >
