@@ -26,7 +26,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
           "Code Push",
           "Fastlane",
           "Sentry",
-          "GA",
+          "Google Analytics",
           "Detox (E2E)",
         ],
         projectDescription:
@@ -59,10 +59,10 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
           "i18n",
           "Jenkins",
           "Sentry",
-          "GA",
+          "Google Analytics",
         ],
         projectDescription:
-          "서비스가 더욱더 활성화하기 위한 NextJs를 사용하여 SEO 최적화 주도 세팅 웹 프로젝트를 개발 및 프로덕션 배포하였습니다. 초기 개발 및 런칭으로 시작하여 100% 리드하여 개발/운영을 맡았습니다.\n\n검색을 통한 서비스의 Organic 한 유저 유입 및 비지니스 파트너들을 효율적으로 모으는 데 많은 도움이 되었습니다. 개발자가 SEO 최적화를 통해 마케팅에 일조할 수 있게 되어 매우 의미가 깊은 프로젝트였습니다.",
+          "서비스가 더욱더 활성화하기 위한 NextJs를 사용하여 SEO 최적화 주도 세팅 웹 프로젝트를 개발 및 프로덕션 배포하였습니다. 초기 개발 및 런칭으로 시작하여 100% 리드하여 개발/운영을 맡았습니다.\n\n검색을 통한 서비스의 OrGoogle Analyticsnic 한 유저 유입 및 비지니스 파트너들을 효율적으로 모으는 데 많은 도움이 되었습니다. 개발자가 SEO 최적화를 통해 마케팅에 일조할 수 있게 되어 매우 의미가 깊은 프로젝트였습니다.",
         projectSummaryList: [
           "안녕하세요 테스트, 정말 좋습니다.",
           "안녕하세요 테스트, 정말 좋습니다.",
@@ -131,7 +131,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
           "안녕하세요 테스트, 정말 좋습니다.",
         ],
         linkUrl:
-          "https://play.google.com/store/apps/details?id=com.gangnkim.homegrit",
+          "https://play.google.com/store/apps/details?id=com.Google Analyticsngnkim.homegrit",
         imgs: [
           "https://images.unsplash.com/photo-1682687982502-1529b3b33f85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
           "https://plus.unsplash.com/premium_photo-1671308540017-ef90a992d79c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80",
