@@ -15,8 +15,8 @@ const Main = () => {
       <Header />
       <S.ContentArea>
         <About />
-        <Skill />
         <Experience />
+        <Skill />
         <Education />
         <Hobby />
         <Channel />
