@@ -74,7 +74,13 @@ const StickySidebarListItem = ({
       <CenterContentArea>
         {projects?.map((item, index) => (
           <CenterContentBox key={index}>
-            <ProjectTitleText onClick={() => window.open(item?.linkUrl)}>
+            <ProjectTitleText
+              style={!item?.linkUrl ? { cursor: "default" } : {}}
+              onClick={() => {
+                if (!item?.linkUrl) return;
+                window.open(item?.linkUrl);
+              }}
+            >
               {(item?.linkUrl?.length ?? 0) > 0 && (
                 <LinkBox>
                   <IconLink src={LinkIcon} />
