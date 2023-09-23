@@ -1,5 +1,4 @@
 import SectionTitle from "@components/molecules/common/SectionTitle";
-import EmailIcon from "@assets/images/iconEmail.svg";
 import BlogIcon from "@assets/images/iconBlog.svg";
 import GithubIcon from "@assets/images/iconGithub.svg";
 import * as S from "@pages/Channel/Channel.style";
