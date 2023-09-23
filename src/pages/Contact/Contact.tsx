@@ -23,8 +23,10 @@ const Contact = () => {
               <S.BorderBoxIcon src={PhoneIcon} />
             </S.BorderBoxIconBox>
             <S.BorderBoxTitle>연락처</S.BorderBoxTitle>
-            <S.BorderBoxContent href="tel:01077777777">
-              +82 10 7777 7777
+            <S.BorderBoxContent
+              href={`tel:${process.env.REACT_APP_PHONE_NUMBER}`}
+            >
+              {process.env.REACT_APP_PHONE_NUMBER}
             </S.BorderBoxContent>
           </S.BorderBox>
         </S.BorderBoxBox>
