@@ -15,7 +15,7 @@ const MarkerList = styled.li`
   white-space: pre-wrap;
   word-break: keep-all;
   color: inherit;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   ::marker {
     color: rgb(49, 132, 255);
