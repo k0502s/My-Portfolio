@@ -314,16 +314,3 @@ const Image = styled(LazyLoadImage)`
     height: 60px;
   }
 `;
-
-const EmptyImage = styled.div`
-  position: absolute;
-  vertical-align: top;
-  width: 120px;
-  height: 80px;
-  border-radius: 4px;
-  border-radius: 4px;
-  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  margin: 0.6rem 0.6rem 0 0;
-  background-color: rgb(230, 226, 226);
-`;

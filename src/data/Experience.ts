@@ -15,7 +15,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
       {
         title: "마이 비너스 인도네시아 뷰티 플랫폼 서비스 APP",
         projectStartPeriod: "2022.6",
-        projectEndPeriod: "",
+        projectEndPeriod: "Current",
         projectTechs: [
           "Typescript",
           "React Native",
@@ -57,7 +57,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
       {
         title: "마이 비너스 서비스 커뮤니티 WEB",
         projectStartPeriod: "2023.4",
-        projectEndPeriod: "",
+        projectEndPeriod: "Current",
         projectTechs: [
           "Typescript",
           "NextJs",
@@ -91,7 +91,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
       {
         title: "마이 비너스 서비스 소개/고객 상담 신청/클리닉 입점신청 WEB",
         projectStartPeriod: "2023.6",
-        projectEndPeriod: "",
+        projectEndPeriod: "Current",
         projectTechs: [
           "Typescript",
           "NextJs",
@@ -124,7 +124,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
       {
         title: "마이 비너스 for 어드민/파트너스 WEB",
         projectStartPeriod: "2022.6",
-        projectEndPeriod: "",
+        projectEndPeriod: "Current",
         projectTechs: [
           "Typescript",
           "ReactJs",
