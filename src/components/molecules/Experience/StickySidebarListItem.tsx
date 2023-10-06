@@ -1,5 +1,5 @@
 import { memo, useCallback, useState } from "react";
-import { ExperienceDataType } from "@@types/Experience";
+import { ExperienceDataType, Project } from "@@types/Experience";
 import styled from "styled-components";
 import Lightbox from "react-18-image-lightbox";
 import LinkIcon from "@assets/images/iconLink.png";
@@ -23,19 +23,7 @@ const PreviewImage = memo(
   },
 );
 
-const StickySidebarListItem = ({
-  company,
-  projects,
-}: StickySidebarListItemProps) => {
-  const {
-    companyName,
-    companyDescription,
-    companyPosition,
-    companyEndPeriod,
-    companyStartPeriod,
-    blogLink,
-  } = company ?? {};
-
+const Content = ({ data }: { data: Project }) => {
   const [isOpenImagesModal, setIsOpenImagesModal] = useState<boolean>(false);
   const [imageIndex, setImageIndex] = useState<number>(0);
 
@@ -57,6 +45,76 @@ const StickySidebarListItem = ({
   }, []);
 
   return (
+    <CenterContentBox>
+      <ProjectTitleText
+        style={!data?.linkUrl ? { cursor: "default" } : {}}
+        onClick={() => {
+          if (!data?.linkUrl) return;
+          window.open(data?.linkUrl);
+        }}
+      >
+        {(data?.linkUrl?.length ?? 0) > 0 && (
+          <LinkBox>
+            <IconLink src={LinkIcon} />
+          </LinkBox>
+        )}
+        {data?.title}
+      </ProjectTitleText>
+      <ProjectPeriodText>{`${data?.projectStartPeriod} ~ ${data?.projectEndPeriod}`}</ProjectPeriodText>
+      <ProjectContentText>{data?.projectDescription}</ProjectContentText>
+      <ProjectTechBox>
+        {data?.projectTechs?.map((item, index) => (
+          <TechTagItem key={index} text={item} />
+        ))}
+      </ProjectTechBox>
+      {data?.projectSummaryList?.map((item, index) => (
+        <ProjectSummaryListBox key={index}>
+          <MarkerListItem text={item} />
+        </ProjectSummaryListBox>
+      ))}
+      <ImagesArea>
+        {data?.imgs?.map((item, index) => {
+          return (
+            <PreviewImage
+              key={index}
+              url={item}
+              onClick={() => onClickOpenImagesModal(index)}
+            />
+          );
+        })}
+      </ImagesArea>
+      {data?.imgs?.length > 0 && isOpenImagesModal && (
+        <Lightbox
+          mainSrc={data?.imgs[Number(imageIndex)]}
+          nextSrc={data?.imgs[(Number(imageIndex) + 1) % data?.imgs.length]}
+          prevSrc={
+            data?.imgs[
+              (Number(imageIndex) + data?.imgs.length - 1) % data?.imgs.length
+            ]
+          }
+          onCloseRequest={onCloseRequest}
+          onMovePrevRequest={() => onMovePrevRequest(data?.imgs)}
+          onMoveNextRequest={() => onMoveNextRequest(data?.imgs)}
+        />
+      )}
+    </CenterContentBox>
+  );
+};
+
+const StickySidebarListItem = ({
+  company,
+  projects,
+}: StickySidebarListItemProps) => {
+  const {
+    companyName,
+    companyDescription,
+    companyPosition,
+    companyEndPeriod,
+    companyStartPeriod,
+    blogLink,
+  } = company ?? {};
+
+  return (
     <Wrap>
       <SideContentArea>
         <SideContentBox>
@@ -73,62 +131,7 @@ const StickySidebarListItem = ({
       </SideContentArea>
       <CenterContentArea>
         {projects?.map((item, index) => (
-          <CenterContentBox key={index}>
-            <ProjectTitleText
-              style={!item?.linkUrl ? { cursor: "default" } : {}}
-              onClick={() => {
-                if (!item?.linkUrl) return;
-                window.open(item?.linkUrl);
-              }}
-            >
-              {(item?.linkUrl?.length ?? 0) > 0 && (
-                <LinkBox>
-                  <IconLink src={LinkIcon} />
-                </LinkBox>
-              )}
-              {item?.title}
-            </ProjectTitleText>
-            <ProjectPeriodText>{`${item?.projectStartPeriod} ~ ${item?.projectEndPeriod}`}</ProjectPeriodText>
-            <ProjectContentText>{item?.projectDescription}</ProjectContentText>
-            <ProjectTechBox>
-              {item?.projectTechs?.map((item, index) => (
-                <TechTagItem key={index} text={item} />
-              ))}
-            </ProjectTechBox>
-            {item?.projectSummaryList?.map((item, index) => (
-              <ProjectSummaryListBox key={index}>
-                <MarkerListItem text={item} />
-              </ProjectSummaryListBox>
-            ))}
-            <ImagesArea>
-              {item?.imgs?.map((item, index) => {
-                return (
-                  <PreviewImage
-                    key={index}
-                    url={item}
-                    onClick={() => onClickOpenImagesModal(index)}
-                  />
-                );
-              })}
-            </ImagesArea>
-            {item?.imgs?.length > 0 && isOpenImagesModal && (
-              <Lightbox
-                mainSrc={item?.imgs[Number(imageIndex)]}
-                nextSrc={
-                  item?.imgs[(Number(imageIndex) + 1) % item?.imgs.length]
-                }
-                prevSrc={
-                  item?.imgs[
-                    (Number(imageIndex) + item?.imgs.length - 1) %
-                      item?.imgs.length
-                  ]
-                }
-                onCloseRequest={onCloseRequest}
-                onMovePrevRequest={() => onMovePrevRequest(item?.imgs)}
-                onMoveNextRequest={() => onMoveNextRequest(item?.imgs)}
-              />
-            )}
-          </CenterContentBox>
+          <Content key={index} data={item} />
         ))}
       </CenterContentArea>
     </Wrap>
@@ -296,7 +299,7 @@ const ImageSpan = styled.span`
 
 const Image = styled.img`
   display: inline-block;
-  object-fit: cover;
+  object-fit: contain;
   margin: 0.6rem 0.6rem 0 0;
   vertical-align: top;
   border-radius: 4px;
