@@ -5,19 +5,15 @@ import Lightbox from "react-18-image-lightbox";
 import LinkIcon from "@assets/images/iconLink.png";
 import MarkerListItem from "@components/atoms/common/MarkerListItem";
 import TechTagItem from "@components/atoms/common/TechTagItem";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 interface StickySidebarListItemProps extends ExperienceDataType {}
 
 const PreviewImage = memo(
   ({ url, onClick }: { url: string; onClick: () => void }) => {
-    const [isLoading, setIsLoading] = useState<boolean>(true);
-
     return (
       <ImageBox onClick={onClick}>
-        <ImageSpan>
-          {isLoading && <EmptyImage />}
-          {<Image src={url} onLoad={() => setIsLoading(false)} />}
-        </ImageSpan>
+        <ImageSpan>{<Image src={url} effect="blur" />}</ImageSpan>
       </ImageBox>
     );
   },
@@ -297,7 +293,7 @@ const ImageSpan = styled.span`
   display: inline-block;
 `;
 
-const Image = styled.img`
+const Image = styled(LazyLoadImage)`
   display: inline-block;
   object-fit: contain;
   margin: 0.6rem 0.6rem 0 0;
