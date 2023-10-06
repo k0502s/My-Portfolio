@@ -9,8 +9,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
       companyPosition: "Front-End\n서비스 개발/운영/유지보수",
       companyDescription:
         "Summits에서 인도네시아 최초 O2O 뷰티 앱 플랫폼 글로벌 서비스 MyVenus를 프론트엔드 개발자로서 개발/운영하였습니다.\n\n과거 MyVenus 외주 프로젝트를 메인으로 도맡게 되었고 서비스 런칭에 성공하고 프로젝트 일정이 끝난 이후 좋은 인연을 계기로 정식으로 입사하게 되었습니다.\n\n저에게 좋은 인연, 좋은 기회로 시작된 MyVenus 서비스는 개발/운영을 통해 개발자로서 할 수 있는 다양한 경험들을 통해 많은 성장을 하게 되었습니다.",
-      blogLink:
-        "https://k0502s.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B0%9C%EB%B0%9C/IT%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B0%9C%EB%B0%9C%20%EC%9A%B4%EC%98%81",
+      blogLink: "https://k0502s.tistory.com",
     },
     projects: [
       {
@@ -30,7 +29,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
           "Detox (E2E)",
         ],
         projectDescription:
-          "서비스 런칭을 위한 초기 프로젝트 개발 및 런칭 성공을 시작으로 개발/운영을 하였습니다. 실제 사용자들이 직접 이용하는 O2O 플랫폼답게 결제, 상품 탐색, 검색, 지도, 채팅 등등 다양한 대다수의 기능(약 90%)을 메인 리드하여 개발/운영을 맡았습니다.\n\n단순 기능 개발을 넘어 실제 서비스 중인 동남아 현지 인프라를 고려하여 저성능 디바이스를 대응한 사용성 및 성능 최적화, 서비스 운영 이슈 트러블 슈팅 및 대응, 더 나은 서비스 개발 환경을 위한 다양한 DevOps 구축 및 적용 등등을 경험 하게되었습니다.\n\n운영 측면에서도 App 다운로드 횟수 10만 이상 달성, 회원가입 수 5만 이상 달성, 회원가입 수 대비 결제 유저 전환율 4% 달성 등등 많은 성과를 이루고 경험해 보기도 하였습니다.",
+          "서비스 런칭을 위한 초기 프로젝트 개발 및 런칭 성공을 시작으로 개발/운영을 하였습니다. 실제 사용자들이 직접 이용하는 O2O 플랫폼답게 결제, 상품 탐색, 검색, 지도, 채팅 등등 다양한 대다수의 기능(약 90%)을 메인 리드하여 개발/운영을 맡았습니다.\n\n단순 기능 개발을 넘어 실제 서비스 중인 동남아 현지 인프라를 고려하여 저성능 디바이스를 대응한 사용성 및 성능 최적화, 서비스 운영 이슈 트러블 슈팅 및 대응, 더 나은 서비스 개발 환경을 위한 다양한 DevOps 구축 및 적용 등등을 경험 하게되었습니다.\n\n운영 측면에서도 App 다운로드 횟수 15만 달성, 회원가입 수 5만 달성, 회원가입 수 대비 결제 유저 전환율 4% 달성 등등 많은 성과를 이루고 경험해 보기도 하였습니다.",
         projectSummaryList: [
           "React Native을 통해 구축된 iOS, AOS 앱의 초기 런칭 성공과 지속적인 서비스 개발/운영",
           "뷰티 / 시술 상품 동남아 현지 결제 시스템, 쿠폰, 친구 초대, 이벤트 운영 시스템 구현",
@@ -155,8 +154,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
       companyPosition: "Front-End\nSI 개발/유지보수",
       companyDescription:
         "첫 직장, 첫 개발 프로젝트, 모든 게 새롭게 느껴지는 시기였습니다. 개발 업계의 환경과 분위기를 알게 된 뜻깊은 시간이었습니다.\n\n길지 않은 시기 임에도 다양한 프로젝트들을 경험했던 것이 개발에 대한 기본역량과 시야를 넓히게 되었던 거 같습니다.",
-      blogLink:
-        "https://k0502s.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B0%9C%EB%B0%9C/IT%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EA%B0%9C%EB%B0%9C%20%EC%9A%B4%EC%98%81",
+      blogLink: "https://k0502s.tistory.com",
     },
     projects: [
       {
