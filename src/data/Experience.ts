@@ -73,7 +73,6 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
         projectSummaryList: [
           "NextJs SSR, SSG, ISR 상활별 적절한 사용을 통한 페이지 개발",
           "SEO 최적화를 위한 종류별 세팅",
-          "무중단 배포 구성",
           "Sentry 적용을 통한 장애 감지 및 대응",
           "Google Analytics를 통한 이벤트 페이지 지표 측정",
         ],
