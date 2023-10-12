@@ -15,7 +15,7 @@ const Contact = () => {
             </S.BorderBoxIconBox>
             <S.BorderBoxTitle>이메일</S.BorderBoxTitle>
             <S.BorderBoxContent href="mailto:k0502s.dev@gmail.com">
-              k0502s.dev@gamil.com
+              k0502s.dev@gmail.com
             </S.BorderBoxContent>
           </S.BorderBox>
           <S.BorderBox>
