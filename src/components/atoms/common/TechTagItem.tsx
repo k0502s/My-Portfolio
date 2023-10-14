@@ -1,4 +1,3 @@
-import { memo } from "react";
 import styled from "styled-components";
 
 interface TechTagItemProps {
@@ -9,7 +8,7 @@ const TechTagItem = ({ text }: TechTagItemProps) => {
   return <TechTag>{text}</TechTag>;
 };
 
-export default memo(TechTagItem);
+export default TechTagItem;
 
 const TechTag = styled.li`
   display: inline-block;

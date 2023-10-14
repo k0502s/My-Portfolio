@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { EducationListDataType } from "@@types/Education";
 import MarkerListItem from "@components/atoms/common/MarkerListItem";
 import styled from "styled-components";
@@ -25,7 +24,7 @@ const EducationListItem = ({ data }: EducationListItemProps) => {
   );
 };
 
-export default memo(EducationListItem);
+export default EducationListItem;
 
 const Wrap = styled.div`
   :not(:last-child) {

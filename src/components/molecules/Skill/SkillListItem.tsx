@@ -1,7 +1,6 @@
 import { SkillDataType } from "@@types/Skill";
 import MarkerListItem from "@components/atoms/common/MarkerListItem";
 import TechTagItem from "@components/atoms/common/TechTagItem";
-import { memo } from "react";
 import styled from "styled-components";
 
 interface SkillListItemProps {
@@ -32,7 +31,7 @@ const SkillListItem = ({ data }: SkillListItemProps) => {
   );
 };
 
-export default memo(SkillListItem);
+export default SkillListItem;
 
 const Wrap = styled.div`
   :not(:last-child) {

@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { HobbyListDataType } from "@@types/Hobby";
 import MarkerListItem from "@components/atoms/common/MarkerListItem";
 import styled from "styled-components";
@@ -25,7 +24,7 @@ const HobbyListItem = ({ data }: HobbyListItemProps) => {
   );
 };
 
-export default memo(HobbyListItem);
+export default HobbyListItem;
 
 const Wrap = styled.div`
   :not(:last-child) {

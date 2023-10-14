@@ -1,4 +1,4 @@
-import { Dispatch, memo, SetStateAction, useCallback } from "react";
+import { Dispatch, SetStateAction, useCallback } from "react";
 import styled from "styled-components";
 
 interface NavbarToggleProps {
@@ -74,4 +74,4 @@ const Line3 = styled.span<{ collapsed: boolean }>`
   margin-bottom: ${({ collapsed }) => (collapsed ? null : "-2px")};
 `;
 
-export default memo(NavbarToggle);
+export default NavbarToggle;

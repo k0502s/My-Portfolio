@@ -1,4 +1,3 @@
-import { memo } from "react";
 import styled from "styled-components";
 
 interface MarkerListItemProps {
@@ -9,7 +8,7 @@ const MarkerListItem = ({ text }: MarkerListItemProps) => {
   return <MarkerList>{text}</MarkerList>;
 };
 
-export default memo(MarkerListItem);
+export default MarkerListItem;
 
 const MarkerList = styled.li`
   white-space: pre-wrap;

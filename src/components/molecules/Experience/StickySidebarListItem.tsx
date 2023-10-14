@@ -1,4 +1,4 @@
-import { memo, useCallback, useState } from "react";
+import { useState } from "react";
 import { ExperienceDataType, Project } from "@@types/Experience";
 import styled from "styled-components";
 import Lightbox from "react-18-image-lightbox";
@@ -7,38 +7,40 @@ import MarkerListItem from "@components/atoms/common/MarkerListItem";
 import TechTagItem from "@components/atoms/common/TechTagItem";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-interface StickySidebarListItemProps extends ExperienceDataType {}
+const PreviewImage = ({
+  url,
+  onClick,
+}: {
+  url: string;
+  onClick: () => void;
+}) => {
+  return (
+    <ImageBox onClick={onClick}>
+      <ImageSpan>{<Image src={url} effect="blur" />}</ImageSpan>
+    </ImageBox>
+  );
+};
 
-const PreviewImage = memo(
-  ({ url, onClick }: { url: string; onClick: () => void }) => {
-    return (
-      <ImageBox onClick={onClick}>
-        <ImageSpan>{<Image src={url} effect="blur" />}</ImageSpan>
-      </ImageBox>
-    );
-  },
-);
-
-const Content = ({ data }: { data: Project }) => {
+const CenterContent = ({ data }: { data: Project }) => {
   const [isOpenImagesModal, setIsOpenImagesModal] = useState<boolean>(false);
   const [imageIndex, setImageIndex] = useState<number>(0);
 
-  const onMovePrevRequest = useCallback((imageUrls: string[]) => {
+  const onMovePrevRequest = (imageUrls: string[]) => {
     setImageIndex((prev) => (prev + imageUrls.length - 1) % imageUrls?.length);
-  }, []);
+  };
 
-  const onMoveNextRequest = useCallback((imageUrls: string[]) => {
+  const onMoveNextRequest = (imageUrls: string[]) => {
     setImageIndex((prev) => (prev + 1) % imageUrls?.length);
-  }, []);
+  };
 
-  const onClickOpenImagesModal = useCallback((index: number) => {
+  const onClickOpenImagesModal = (index: number) => {
     setIsOpenImagesModal(true);
     setImageIndex(index);
-  }, []);
+  };
 
-  const onCloseRequest = useCallback(() => {
+  const onCloseRequest = () => {
     setIsOpenImagesModal((prev) => !prev);
-  }, []);
+  };
 
   return (
     <CenterContentBox>
@@ -97,6 +99,8 @@ const Content = ({ data }: { data: Project }) => {
   );
 };
 
+interface StickySidebarListItemProps extends ExperienceDataType {}
+
 const StickySidebarListItem = ({
   company,
   projects,
@@ -127,7 +131,7 @@ const StickySidebarListItem = ({
       </SideContentArea>
       <CenterContentArea>
         {projects?.map((item, index) => (
-          <Content key={index} data={item} />
+          <CenterContent key={index} data={item} />
         ))}
       </CenterContentArea>
     </Wrap>

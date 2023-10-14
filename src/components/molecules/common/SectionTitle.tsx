@@ -1,4 +1,4 @@
-import React, { memo, ReactNode, useMemo } from "react";
+import { ReactNode, useMemo } from "react";
 import styled from "styled-components";
 
 interface SectionTitleProps {
@@ -29,7 +29,7 @@ const SectionTitle = ({ title, koreaTitle, align }: SectionTitleProps) => {
   );
 };
 
-export default memo(SectionTitle);
+export default SectionTitle;
 
 const Wrap = styled.div`
   display: flex;
