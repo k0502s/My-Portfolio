@@ -58,7 +58,8 @@ const CurrentStatusText = styled.span`
 const CurrentStatusTag = styled.div`
   padding: 2px 6px;
   border-radius: 4px;
-  background-color: rgb(49, 132, 255);
+  /* background-color: rgb(49, 132, 255); */
+  background-color: lightgray;
 `;
 
 const CurrentStatusTagText = styled.span`
@@ -67,7 +68,7 @@ const CurrentStatusTagText = styled.span`
   color: #ffff;
   font-size: 0.875rem;
   line-height: 1.5;
-  animation: blink 0.5s ease-in-out infinite alternate;
+  /* animation: blink 0.5s ease-in-out infinite alternate;
   @keyframes blink {
     0% {
       opacity: 0;
@@ -75,7 +76,9 @@ const CurrentStatusTagText = styled.span`
     100% {
       opacity: 1;
     }
-  }
+  } */
+  text-decoration-line: line-through;
+  text-decoration-style: double;
 `;
 
 export {
