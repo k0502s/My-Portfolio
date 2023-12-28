@@ -1,6 +1,7 @@
 import SectionTitle from "@components/molecules/common/SectionTitle";
 import BlogIcon from "@assets/images/iconBlog.svg";
 import GithubIcon from "@assets/images/iconGithub.svg";
+import LinkedinIcon from "@assets/images/iconLinkedin.svg";
 import * as S from "@pages/Channel/Channel.style";
 
 const Contact = () => {
@@ -27,6 +28,24 @@ const Contact = () => {
             <S.BorderBoxTitle>GitHub</S.BorderBoxTitle>
             <S.BorderBoxContent
               onClick={() => window.open("https://github.com/k0502s")}
+            >
+              github.com/k0502s
+            </S.BorderBoxContent>
+          </S.BorderBox>
+          <S.BorderBox>
+            <S.BorderBoxIconBox>
+              <S.BorderBoxIcon
+                style={{ width: 22, height: 22 }}
+                src={LinkedinIcon}
+              />
+            </S.BorderBoxIconBox>
+            <S.BorderBoxTitle>LinkedIn</S.BorderBoxTitle>
+            <S.BorderBoxContent
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/jinseok-kim-a6a73a215/",
+                )
+              }
             >
               github.com/k0502s
             </S.BorderBoxContent>
