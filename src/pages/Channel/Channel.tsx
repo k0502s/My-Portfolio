@@ -42,12 +42,10 @@ const Contact = () => {
             <S.BorderBoxTitle>LinkedIn</S.BorderBoxTitle>
             <S.BorderBoxContent
               onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/jinseok-kim-a6a73a215/",
-                )
+                window.open("https://www.linkedin.com/in/jin-seok-kim")
               }
             >
-              github.com/k0502s
+              linkedin.com/in/jin-seok-kim
             </S.BorderBoxContent>
           </S.BorderBox>
         </S.BorderBoxBox>
