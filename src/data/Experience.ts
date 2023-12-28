@@ -7,8 +7,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
       companyStartPeriod: "2023.12",
       companyEndPeriod: "현재 재직중",
       companyPosition: "Front-End\n서비스 개발/운영/유지보수",
-      companyDescription:
-        "AfreecaTV Front-End 개발자로 입사하였습니다.\n\nAfreecaTV Global 신규 서비스 개발중 입니다.",
+      companyDescription: "AfreecaTV 프론트엔드 개발자로 입사하였습니다.",
       blogLink: "",
     },
     projects: [
@@ -18,7 +17,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
         projectEndPeriod: "Current",
         projectTechs: [],
         projectDescription:
-          "현재는 AfreecaTV Global 신규 서비스 Front-End 개발중 입니다.",
+          "현재는 AfreecaTV Global 신규 서비스 개발중 입니다.",
         projectSummaryList: [],
         linkUrl: "",
         imgs: [],
@@ -29,7 +28,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
     company: {
       companyName: "SUMMITS Corp.",
       companyStartPeriod: "2022.6",
-      companyEndPeriod: "2023.10",
+      companyEndPeriod: "2023.11",
       companyPosition: "Front-End\n서비스 개발/운영/유지보수",
       companyDescription:
         "Summits에서 인도네시아 최초 O2O 뷰티 앱 플랫폼 글로벌 서비스 MyVenus를 프론트엔드 개발자로서 개발/운영하였습니다.\n\n과거 MyVenus 외주 프로젝트를 메인으로 도맡게 되었고 서비스 런칭에 성공하고 프로젝트 일정이 끝난 이후 좋은 인연을 계기로 정식으로 입사하게 되었습니다.\n\n저에게 좋은 인연, 좋은 기회로 시작된 MyVenus 서비스는 개발/운영을 통해 개발자로서 할 수 있는 다양한 경험들을 통해 많은 성장을 하게 되었습니다.",
@@ -39,7 +38,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
       {
         title: "마이 비너스 인도네시아 뷰티 플랫폼 서비스 APP",
         projectStartPeriod: "2022.6",
-        projectEndPeriod: "2023.10",
+        projectEndPeriod: "2023.11",
         projectTechs: [
           "Typescript",
           "React Native",
@@ -81,7 +80,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
       {
         title: "마이 비너스 서비스 커뮤니티 WEB",
         projectStartPeriod: "2023.4",
-        projectEndPeriod: "2023.10",
+        projectEndPeriod: "2023.11",
         projectTechs: [
           "Typescript",
           "NextJs",
@@ -114,7 +113,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
       {
         title: "마이 비너스 서비스 소개/고객 상담 신청/클리닉 입점신청 WEB",
         projectStartPeriod: "2023.6",
-        projectEndPeriod: "2023.10",
+        projectEndPeriod: "2023.11",
         projectTechs: [
           "Typescript",
           "NextJs",
@@ -147,7 +146,7 @@ export const EXPERIENCE_LIST: ExperienceDataType[] = [
       {
         title: "마이 비너스 for 어드민/파트너스 WEB",
         projectStartPeriod: "2022.6",
-        projectEndPeriod: "2023.10",
+        projectEndPeriod: "2023.11",
         projectTechs: [
           "Typescript",
           "ReactJs",
